@@ -1,0 +1,50 @@
+@media (min-width: 1024px) {
+  .title {
+    font-size: 24px;
+    margin-inline: 45%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    & .sub-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    & .side-formulaire-contact {
+      width: 47%;
+
+      & .formulaire-contact {
+        margin-top: 1rem;
+      }
+    }
+
+    & .side-horary-contact {
+      width: 47%;
+
+      & .info-contact {
+        display: block;
+        margin-bottom: 24px;
+        font-size: 18px;
+      }
+
+      & .horary-contact {
+
+        & table {
+          border-spacing: 0;
+          text-align: left;
+          display: inline-table;
+          color: #8e8e8e;
+          font-size: 18px;
+
+          & .day {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

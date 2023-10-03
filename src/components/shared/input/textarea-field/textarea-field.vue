@@ -1,11 +1,11 @@
 <template>
-  <v-text-field
+  <v-textarea
       density="compact"
       :label="label"
       variant="outlined"
       rounded="0"
-      :value="valueTextField"
-  ></v-text-field>
+      :value="valueTextarea"
+  ></v-textarea>
 </template>
 
-<script src="./text-field.js" />
+<script src="./textarea-field.js" />

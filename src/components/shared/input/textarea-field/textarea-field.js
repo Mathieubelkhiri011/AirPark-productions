@@ -1,6 +1,6 @@
 export default {
     props: [
-        'valueTextField',
+        'valueTextarea',
         'label'
     ],
 };
