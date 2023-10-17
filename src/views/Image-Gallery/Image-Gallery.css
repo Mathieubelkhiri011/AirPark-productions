@@ -1,0 +1,12 @@
+.image-gallery {
+    margin-block: 2rem;
+    padding-inline: 2rem;
+
+    & .image-gallery-title {
+        padding-bottom: 2rem;
+    }
+
+    & .carousel {
+        padding-top: 2rem;
+    }
+}
