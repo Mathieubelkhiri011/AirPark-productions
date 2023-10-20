@@ -3,7 +3,10 @@
     <ImageGallery></ImageGallery>
     <Contact></Contact>
   </div>
-  <Footer></Footer>
+  <div class="footer-content">
+    <Footer></Footer>
+  </div>
 </template>
 
 <script src="./Home.js"/>
+<style src="./Home.css"></style>

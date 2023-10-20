@@ -2,7 +2,7 @@
   <div class="footer">
     <section class="panel-footer">
       <div class="info-footer">
-        <div>
+        <div class="message-placement">
           <span class="font-lighter">Copyright © 2023 AirPark Productions - Tous droits réservés.</span>
         </div>
       </div>

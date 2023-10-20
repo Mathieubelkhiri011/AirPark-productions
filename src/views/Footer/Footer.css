@@ -7,5 +7,9 @@
       padding-inline: 40px;
       font-size: 18px;
       color: white;
+
+      & .message-placement{
+        padding-block: 2rem;
+      }
     }
 }

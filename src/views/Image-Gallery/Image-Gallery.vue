@@ -1,6 +1,6 @@
 <template>
   <div class="image-gallery">
-    <span class="image-gallery-title title font-lighter">CONTACT</span>
+    <span class="image-gallery-title title font-lighter">Galerie de photos</span>
     <div class="carousel">
       <v-carousel hide-delimiters
                   show-arrows="hover"
