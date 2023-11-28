@@ -10,5 +10,6 @@
   ],
   "compilerOptions": {
     "types": ["webpack-env", "node"]
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"]
 }

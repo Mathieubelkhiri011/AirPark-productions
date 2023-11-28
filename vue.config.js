@@ -1,3 +1,11 @@
 module.exports = {
-    publicPath: import.meta.env.NODE_ENV === 'production' ? '/AirPark-productions/' : '/'
-}
+    devServer: {
+        headers: { "Cache-Control": "no-cache, no-store, must-revalidate" },
+        port: 8080,
+    },
+    publicPath: '/',
+    pwa: {
+        name: 'AirPark-productions',
+        themeColor: '#4e73df',
+    },
+};
