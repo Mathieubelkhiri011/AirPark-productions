@@ -1,3 +1,6 @@
+import './assets/main.css'
+import './assets/styles/app.css'
+
 // Vuetify
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
