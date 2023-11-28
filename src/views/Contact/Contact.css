@@ -48,3 +48,8 @@
     }
   }
 }
+
+.currentyDay {
+  font-weight: bold;
+  color: #5e5e5e
+}

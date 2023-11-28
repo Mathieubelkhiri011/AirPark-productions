@@ -4,6 +4,7 @@
       :label="label"
       variant="outlined"
       rounded="0"
+      rows="10"
       :value="valueTextarea"
   ></v-textarea>
 </template>

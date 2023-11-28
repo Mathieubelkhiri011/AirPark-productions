@@ -8,6 +8,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  build: {
+    outDir: process.env.MODE === 'production' ? 'dist/prod' : 'dist/dev',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -15,3 +18,4 @@ export default defineConfig({
   },
   base: "https://mathieubelkhiri011.github.io/AirPark-productions/"
 })
+

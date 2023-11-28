@@ -13,31 +13,31 @@
       <span class="sub-title info-contact">Horaires</span>
       <div class="horary-contact">
         <table>
-          <tr>
+          <tr :class="{ 'font-bold': jourActuel === DayOfWeekEnums.Monday }">
             <td class="day"><span>lun.</span></td>
             <td><span>09 h 00 - 17 h 00</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Tuesday }">
             <td class="day"><span>mar.</span></td>
             <td><span>09 h 00 - 17 h 00</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Wednesday }">
             <td class="day"><span>mer.</span></td>
             <td><span>09 h 00 - 17 h 00</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Thursday }">
             <td class="day"><span>jeu.</span></td>
             <td><span>09 h 00 - 17 h 00</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Friday }">
             <td class="day"><span>ven.</span></td>
             <td><span>09 h 00 - 17 h 00</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Saturday }">
             <td class="day"><span>sam.</span></td>
             <td><span>Fermé</span></td>
           </tr>
-          <tr>
+          <tr :class="{ 'currentyDay': jourActuel === DayOfWeekEnums.Sunday }">
             <td class="day"><span>dim.</span></td>
             <td><span>Fermé</span></td>
           </tr>

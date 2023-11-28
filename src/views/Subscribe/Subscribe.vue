@@ -1,5 +1,6 @@
 <template>
-  <div class="image-gallery">
+  <div class="subscribe-content">
+
 
   </div>
 </template>
