@@ -1,14 +1,13 @@
 <template>
   <div class="image-gallery">
-    <span class="image-gallery-title title font-lighter">Galerie de photos</span>
+    <span class="image-gallery-title title font-lighter w-100">Galerie d'images</span>
     <div class="carousel">
-      <v-carousel hide-delimiters
-                  show-arrows="hover"
+      <v-carousel :show-arrows="false"
                   cycle :interval="10000">
         <v-carousel-item
-            v-for="(item,i) in items"
+            v-for="(image,i) in homeImages"
             :key="i"
-            :src="item.src"
+            :src="image.link"
             cover
         ></v-carousel-item>
       </v-carousel>

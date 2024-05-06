@@ -1,0 +1,39 @@
+.about {
+    margin-block: 2rem;
+    padding-inline: 2rem;
+
+    & .about-title {
+        display: block;
+        text-align: center;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        & .about-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            & .description-image {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px;
+            }
+
+            & .image {
+                width: 50%;
+                height: auto;
+            }
+
+            & img.v-img__img.v-img__img--cover {
+                width: 98%;
+            }
+        }
+    }
+}

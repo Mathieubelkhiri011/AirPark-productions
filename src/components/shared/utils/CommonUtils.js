@@ -13,6 +13,6 @@ export function getCurrentyDay() {
         DayOfWeekEnums.Friday,
         DayOfWeekEnums.Saturday,
     ];
-console.debug(joursSemaine[numeroJour]);
+
     return joursSemaine[numeroJour];
 }

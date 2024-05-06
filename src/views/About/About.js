@@ -1,27 +1,31 @@
 import { ApiMediaImageHome } from '@/constants/ApiUrls';
 import MediaDTO, { mapperMediaDTO } from '@/components/shared/dto/media'
+import imageGallery from '@/views/Image-Gallery/Image-Gallery'
 
 
 export default {
+    computed: {
+        imageGallery() {
+            return imageGallery
+        }
+    },
     data () {
         return {
-            homeImages: [MediaDTO],
+            aboutImages: [MediaDTO],
         }
     },
     methods: {
-        async fetchHomeImages() {
+        async fetchAboutImages() {
             try {
                 const response = await fetch(ApiMediaImageHome);
                 const data = await response.json();
-
-                console.info(data);
-                this.homeImages = mapperMediaDTO(data)
+                this.aboutImages = mapperMediaDTO(data)
             } catch (error) {
                 console.error('Erreur lors de la récupération des utilisateurs :', error);
             }
         },
     },
     created() {
-        this.fetchHomeImages();
+        this.fetchAboutImages().then();
     },
 };

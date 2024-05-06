@@ -1,5 +1,8 @@
 <template>
+  <Header></Header>
   <div class="container">
+    <About></About>
+    <VideoGallery></VideoGallery>
     <ImageGallery></ImageGallery>
     <Contact></Contact>
   </div>
