@@ -5,8 +5,6 @@ export default class MediaDTO {
     idMedia,
     title,
     description,
-    methodImport,
-    base64,
     link,
     status,
     displayHomePage
@@ -14,8 +12,6 @@ export default class MediaDTO {
     this.idMedia = idMedia;
     this.title = title;
     this.description = description;
-    this.methodImport = methodImport;
-    this.base64 = base64;
     this.link = link;
     this.status = status;
     this.displayHomePage = displayHomePage;
@@ -28,6 +24,6 @@ export function mapperMediaDTO(data) {
     return [];
   }
   return data.map((
-    { idMedia, title, description, methodImport, base64, link, status, displayHomePage}
-  ) => new MediaDTO(idMedia, title, description, methodImport, base64, link, status, displayHomePage));
+    { idMedia, title, description, link, status, displayHomePage}
+  ) => new MediaDTO(idMedia, title, description, link, status, displayHomePage));
 }

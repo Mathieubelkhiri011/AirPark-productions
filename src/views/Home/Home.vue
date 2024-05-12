@@ -1,4 +1,5 @@
 <template>
+  <v-btn class="return-button" icon="mdi-arrow-left" size="large" @click="redirectToUrl('/admin/portal')"></v-btn>
   <Header></Header>
   <div class="container">
     <About></About>

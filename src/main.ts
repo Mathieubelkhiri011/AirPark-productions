@@ -1,27 +1,22 @@
 import './assets/main.css'
 import './assets/styles/app.css'
 
-// Vuetify
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+//Google
+import vue3GoogleLogin from 'vue3-google-login'
+
+import NowUiKit from './plugins/now-ui-kit';
+
 
 import router from '@/router'
 import { createApp } from 'vue'
 import App from '@/App.vue'
 
-const vuetify = createVuetify({
-    components,
-    directives,
-})
-
-const app = createApp(App)
-
+const app = createApp(App);
 console.debug("Environment : " + import.meta.env.MODE);
 
-app.use(vuetify)
-app.use(router)
-
-app.mount('#app')
+app.use(NowUiKit);
+app.use(router);
+app.use(vue3GoogleLogin, {
+    clientId: import.meta.env.VITE_APP_GOOGLE_CLIENT_ID
+});
+app.mount('#app');

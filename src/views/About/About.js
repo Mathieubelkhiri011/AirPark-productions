@@ -1,5 +1,5 @@
 import { ApiMediaImageHome } from '@/constants/ApiUrls';
-import MediaDTO, { mapperMediaDTO } from '@/components/shared/dto/media'
+import MediaDTO, { mapperMediaDTO } from '@/components/shared/dto/mediaDto'
 import imageGallery from '@/views/Image-Gallery/Image-Gallery'
 
 

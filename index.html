@@ -12,6 +12,12 @@
         import './src/assets/main.css'
         import './src/assets/styles/app.css'
 
+        // PrimeVue
+        import 'primevue/resources/themes/saga-blue/theme.css';
+        import 'primevue/resources/primevue.min.css';
+        import 'primeicons/primeicons.css';
+        import PrimeVue from 'primevue/config';
+
         // Vuetify
         import '@mdi/font/css/materialdesignicons.css'
         import 'vuetify/styles'
@@ -32,6 +38,7 @@
 
         console.debug("Environment : " + import.meta.env.MODE);
 
+        app.use(PrimeVue);
         app.use(vuetify)
         app.use(router)
 

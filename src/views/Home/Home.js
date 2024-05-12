@@ -13,5 +13,23 @@ export default {
         ImageGallery,
         VideoGallery,
         Footer
+    },
+    data() {
+        return {
+            isAdmin: false
+        }
+    },
+    mounted() {
+        const bearerToken = localStorage.getItem(import.meta.env.VITE_APP_BEARER_TOKEN_GOOGLE_CACHE);
+        const accessToken = localStorage.getItem(import.meta.env.VITE_APP_ACCESS_TOKEN_GOOGLE_CACHE);
+
+        if (accessToken && bearerToken) {
+            this.isAdmin = true;
+        }
+    },
+    methods: {
+        redirectToUrl(url) {
+            this.$router.push(url);
+        }
     }
 };

@@ -1,12 +1,12 @@
 <template>
   <div class="formulaire-contact">
-    <TextFormField label="Nom" :value-text-field="mail.nom" v-model="mail.nom"></TextFormField>
+    <TextFormField label="Email" :value-text-field="mail.from" type="text" v-model="mail.from"></TextFormField>
 
-    <TextFormField label="Email" :value-text-field="mail.address" v-model="mail.address"></TextFormField>
+    <TextFormField label="Sujet" :value-text-field="mail.subject" type="text" v-model="mail.subject"></TextFormField>
 
-    <TextareaFormField label="Message" :value-textarea="mail.content" v-model="mail.content" class="message-field"></TextareaFormField>
+    <TextareaFormField label="Message" :value-textarea="mail.body" v-model="mail.body" class="message-field"></TextareaFormField>
 
-    <ButtonOutline label="Envoyer" :loading="loading" @click="submitForm"></ButtonOutline>
+    <ButtonOutline label="Envoyer" :loading="loading" @click="send"></ButtonOutline>
   </div>
 </template>
 
