@@ -1,12 +1,12 @@
-import TextFormField from '../../../components/shared/input/text-field/text-field.vue';
-import TextareaFormField from '../../../components/shared/input/textarea-field/textarea-field.vue';
-import ButtonOutline from '../../../components/shared/button/button-outline/ButtonOutline.vue';
 import { ApiSendEmail } from '@/constants/ApiUrls'
+import ButtonOutline from '@/components/shared/button/button-outline/ButtonOutline'
+import TextField from '@/components/shared/input/text-field/text-field.vue'
+import TextareaField from '@/components/shared/input/textarea-field/textarea-field'
 
 export default {
     components: {
-        TextFormField,
-        TextareaFormField,
+        TextField,
+        TextareaField,
         ButtonOutline
     },
     data() {

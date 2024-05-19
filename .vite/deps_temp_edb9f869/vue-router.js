@@ -175,7 +175,7 @@ function setupDevtoolsPlugin(pluginDescriptor, setupFn) {
   }
 }
 
-// node_modules/vue-router/dist/vue-router.mjs
+// node_modules/vue-index/dist/vue-index.mjs
 var isBrowser = typeof window !== "undefined";
 function isESModule(obj) {
   return obj.__esModule || obj[Symbol.toStringTag] === "Module";
@@ -1397,11 +1397,11 @@ function normalizeQuery(query) {
   }
   return normalizedQuery;
 }
-var matchedRouteKey = Symbol(true ? "router view location matched" : "");
-var viewDepthKey = Symbol(true ? "router view depth" : "");
+var matchedRouteKey = Symbol(true ? "index view location matched" : "");
+var viewDepthKey = Symbol(true ? "index view depth" : "");
 var routerKey = Symbol(true ? "router" : "");
 var routeLocationKey = Symbol(true ? "route location" : "");
-var routerViewLocationKey = Symbol(true ? "router view location" : "");
+var routerViewLocationKey = Symbol(true ? "index view location" : "");
 function useCallbacks() {
   let handlers = [];
   function add(handler) {
@@ -1443,7 +1443,7 @@ function onBeforeRouteLeave(leaveGuard) {
     {}
   ).value;
   if (!activeRecord) {
-    warn("No active route record was found when calling `onBeforeRouteLeave()`. Make sure you call this function inside a component child of <router-view>. Maybe you called it inside of App.vue?");
+    warn("No active route record was found when calling `onBeforeRouteLeave()`. Make sure you call this function inside a component child of <index-view>. Maybe you called it inside of App.vue?");
     return;
   }
   registerGuard(activeRecord, "leaveGuards", leaveGuard);
@@ -1459,7 +1459,7 @@ function onBeforeRouteUpdate(updateGuard) {
     {}
   ).value;
   if (!activeRecord) {
-    warn("No active route record was found when calling `onBeforeRouteUpdate()`. Make sure you call this function inside a component child of <router-view>. Maybe you called it inside of App.vue?");
+    warn("No active route record was found when calling `onBeforeRouteUpdate()`. Make sure you call this function inside a component child of <index-view>. Maybe you called it inside of App.vue?");
     return;
   }
   registerGuard(activeRecord, "updateGuards", updateGuard);
@@ -1675,13 +1675,13 @@ var RouterLinkImpl = defineComponent({
     const link = reactive(useLink(props));
     const { options } = inject(routerKey);
     const elClass = computed(() => ({
-      [getLinkClass(props.activeClass, options.linkActiveClass, "router-link-active")]: link.isActive,
+      [getLinkClass(props.activeClass, options.linkActiveClass, "index-link-active")]: link.isActive,
       // [getLinkClass(
       //   props.inactiveClass,
       //   options.linkInactiveClass,
-      //   'router-link-inactive'
+      //   'index-link-inactive'
       // )]: !link.isExactActive,
-      [getLinkClass(props.exactActiveClass, options.linkExactActiveClass, "router-link-exact-active")]: link.isExactActive
+      [getLinkClass(props.exactActiveClass, options.linkExactActiveClass, "index-link-exact-active")]: link.isExactActive
     }));
     return () => {
       const children = slots.default && slots.default(link);
@@ -1873,9 +1873,9 @@ function addDevtools(app, router, matcher) {
   router.__hasDevtools = true;
   const id = routerId++;
   setupDevtoolsPlugin({
-    id: "org.vuejs.router" + (id ? "." + id : ""),
+    id: "org.vuejs.index" + (id ? "." + id : ""),
     label: "Vue Router",
-    packageName: "vue-router",
+    packageName: "vue-index",
     homepage: "https://router.vuejs.org",
     logo: "https://router.vuejs.org/logo.png",
     componentStateTypes: ["Routing"],
@@ -1900,7 +1900,7 @@ function addDevtools(app, router, matcher) {
         node.tags.push({
           label: (info.name ? `${info.name.toString()}: ` : "") + info.path,
           textColor: 0,
-          tooltip: "This component is rendered by &lt;router-view&gt;",
+          tooltip: "This component is rendered by &lt;index-view&gt;",
           backgroundColor: PINK_500
         });
       }
@@ -1931,7 +1931,7 @@ function addDevtools(app, router, matcher) {
       api.sendInspectorTree(routerInspectorId);
       api.sendInspectorState(routerInspectorId);
     });
-    const navigationsLayerId = "router:navigations:" + id;
+    const navigationsLayerId = "index:navigations:" + id;
     api.addTimelineLayer({
       id: navigationsLayerId,
       label: `Router${id ? " " + id : ""} Navigations`,
@@ -2003,7 +2003,7 @@ function addDevtools(app, router, matcher) {
         }
       });
     });
-    const routerInspectorId = "router-inspector:" + id;
+    const routerInspectorId = "index-inspector:" + id;
     api.addInspector({
       id: routerInspectorId,
       label: "Routes" + (id ? " " + id : ""),
@@ -2429,7 +2429,7 @@ ${JSON.stringify(newTargetLocation, null, 2)}
       );
     }
     return (failure ? Promise.resolve(failure) : navigate(toLocation, from)).catch((error) => isNavigationFailure(error) ? (
-      // navigation redirects still mark the router as ready
+      // navigation redirects still mark the index as ready
       isNavigationFailure(
         error,
         2
@@ -2713,12 +2713,12 @@ ${JSON.stringify(newTargetLocation, null, 2)}
         get: () => unref(currentRoute)
       });
       if (isBrowser && // used for the initial navigation client side to avoid pushing
-      // multiple times when the router is used in multiple apps
+      // multiple times when the index is used in multiple apps
       !started && currentRoute.value === START_LOCATION_NORMALIZED) {
         started = true;
         push(routerHistory.location).catch((err) => {
           if (true)
-            warn("Unexpected error when starting the router:", err);
+            warn("Unexpected error when starting the index:", err);
         });
       }
       const reactiveRoute = {};
@@ -2810,11 +2810,11 @@ export {
 };
 /*! Bundled license information:
 
-vue-router/dist/vue-router.mjs:
+vue-index/dist/vue-index.mjs:
   (*!
-    * vue-router v4.2.4
+    * vue-index v4.2.4
     * (c) 2023 Eduardo San Martin Morote
     * @license MIT
     *)
 */
-//# sourceMappingURL=vue-router.js.map
+//# sourceMappingURL=vue-index.js.map

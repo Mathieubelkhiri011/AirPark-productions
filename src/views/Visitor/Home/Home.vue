@@ -1,14 +1,6 @@
 <template>
-  <v-btn class="return-button" icon="mdi-arrow-left" size="large" @click="redirectToUrl('/admin/portal')"></v-btn>
-  <Header></Header>
-  <div class="container">
-    <About></About>
-    <VideoGallery></VideoGallery>
-    <ImageGallery></ImageGallery>
-    <Contact></Contact>
-  </div>
-  <div class="footer-content">
-    <Footer></Footer>
+  <div class="image-container">
+    <img class="responsive-image" :src="homeWallpaper" alt="image d'accueil">
   </div>
 </template>
 

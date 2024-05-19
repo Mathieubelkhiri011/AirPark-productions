@@ -11,7 +11,7 @@ import App from '@/App.vue'
 const app = createApp(App);
 console.debug("Environment : " + import.meta.env.MODE);
 
-app.use(router);
+app.use(router)
 app.use(vue3GoogleLogin, {
     clientId: import.meta.env.VITE_APP_GOOGLE_CLIENT_ID
 });

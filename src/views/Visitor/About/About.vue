@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <span class="about-title title font-lighter w-100">À PROPOS DE NOUS ?</span>
+    <span class="about-title title font-lighter w-100">QUI SOMMES NOUS ?</span>
     <section class="about-container">
       <article v-for="(item, index) in aboutImages" :key="index" class="about-content">
         <div v-if="index % 2 !== 0" class="description-image">

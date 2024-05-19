@@ -1,10 +1,10 @@
 <template>
   <div class="formulaire-contact">
-    <TextFormField label="Email" :value-text-field="mail.from" type="text" v-model="mail.from"></TextFormField>
+    <TextField label="Email" :value-text-field="mail.from" type="text" v-model="mail.from"></TextField>
 
-    <TextFormField label="Sujet" :value-text-field="mail.subject" type="text" v-model="mail.subject"></TextFormField>
+    <TextField label="Sujet" :value-text-field="mail.subject" type="text" v-model="mail.subject"></TextField>
 
-    <TextareaFormField label="Message" :value-textarea="mail.body" v-model="mail.body" class="message-field"></TextareaFormField>
+    <TextareaField label="Message" :value-textarea="mail.body" v-model="mail.body" class="message-field"></TextareaField>
 
     <ButtonOutline label="Envoyer" :loading="loading" @click="send"></ButtonOutline>
   </div>
