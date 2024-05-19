@@ -3,7 +3,7 @@ import ImageGallery from "../Image-Gallery/Image-Gallery.vue";
 import Footer from "../Footer/Footer.vue";
 import About from '@/views/About/About.vue';
 import Header from '@/views/Header/Header.vue';
-import VideoGallery from '@/views/Video-Gallery/Video-Gallery.vue';
+import VideoGallery from '@/views/Visitor/Video-Gallery/Video-Gallery.vue';
 
 export default {
     components: {

@@ -17,5 +17,5 @@
   </div>
 </template>
 
-<script src="./Video-Gallery.js"/>
-<style src="./Video-Gallery.css"></style>
+<script src="Video-Gallery.js"/>
+<style src="Video-Gallery.css"></style>

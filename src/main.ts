@@ -4,9 +4,6 @@ import './assets/styles/app.css'
 //Google
 import vue3GoogleLogin from 'vue3-google-login'
 
-import NowUiKit from './plugins/now-ui-kit';
-
-
 import router from '@/router'
 import { createApp } from 'vue'
 import App from '@/App.vue'
@@ -14,7 +11,6 @@ import App from '@/App.vue'
 const app = createApp(App);
 console.debug("Environment : " + import.meta.env.MODE);
 
-app.use(NowUiKit);
 app.use(router);
 app.use(vue3GoogleLogin, {
     clientId: import.meta.env.VITE_APP_GOOGLE_CLIENT_ID

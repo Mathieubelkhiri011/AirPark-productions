@@ -5,5 +5,5 @@
   </div>
 </template>
 
-<script src="./Subscribe.js"/>
-<style src="./Subscribe.css"></style>
+<script src="./Navbar.ts"/>
+<style src="./Navbar.css"></style>

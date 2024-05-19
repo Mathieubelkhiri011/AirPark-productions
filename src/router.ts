@@ -10,10 +10,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      components: { default: Home, header: MainNavbar },
-      props: {
-        header: { colorOnScroll: 400 }
-      }
+      components: Home
     },
     {
       path: '/admin/login',
