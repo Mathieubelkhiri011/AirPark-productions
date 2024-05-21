@@ -1,0 +1,25 @@
+@media (min-width: 1024px) {
+  .message-field {
+    height: 12rem;
+  }
+}
+
+
+.form-identity,
+.form-info{
+  display: flex;
+  gap: 1rem;
+}
+
+.v-label {
+  white-space: wrap !important;
+}
+
+
+@media screen and (max-width: 350px) {
+  .form-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+  }
+}

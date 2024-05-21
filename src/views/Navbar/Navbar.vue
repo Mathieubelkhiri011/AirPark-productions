@@ -8,8 +8,8 @@
         <div class="name">AirPark-productions</div>
         <ul class="nav-items">
           <li>A propos</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li><a href="#about">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="socials-networks">
           <i class="pi pi-instagram"></i>

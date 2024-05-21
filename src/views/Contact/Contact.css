@@ -1,0 +1,20 @@
+.contact-container {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .sub-title-content {
+    text-align: center;
+
+    .sub-title {
+      width: 75%;
+      display: inline-flex;
+    }
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+  }
+}
