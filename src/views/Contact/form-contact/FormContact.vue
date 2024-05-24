@@ -1,4 +1,27 @@
 <template>
+  <v-snackbar
+    v-model="snackbar.show"
+    :timeout="10000"
+  >
+    <div class="snackbar-content">
+      <v-icon
+        :color="snackbar.color"
+        :icon="snackbar.icon"
+      ></v-icon>
+      {{ snackbar.text }}
+    </div>
+
+    <template v-slot:actions>
+      <v-btn
+        color="white"
+        variant="text"
+        @click="snackbar.show = false"
+      >
+        <i class="pi pi-times"></i>
+      </v-btn>
+    </template>
+  </v-snackbar>
+
   <div class="formulaire-contact">
     <v-select
       label="Type de service *"
@@ -66,27 +89,6 @@
 
     <ButtonOutline label="Envoyer" :loading="loading" @click="submitForm"></ButtonOutline>
   </div>
-
-  <v-snackbar
-    v-model="snackbar.show"
-    :timeout="2000"
-  >
-    <v-icon
-      :color="snackbar.color"
-      :icon="snackbar.icon"
-    ></v-icon>
-    {{ snackbar.text }}
-
-    <template v-slot:actions>
-      <v-btn
-        color="white"
-        variant="text"
-        @click="snackbar.show = false"
-      >
-        Fermer
-      </v-btn>
-    </template>
-  </v-snackbar>
 </template>
 
 <script src="./FormContact.ts" />
