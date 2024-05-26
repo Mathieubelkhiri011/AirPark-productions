@@ -1,10 +1,10 @@
-.about {
+.service {
     margin-block: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-    & .about-title {
+    & .service-title {
         display: block;
         text-align: center;
     }
@@ -24,85 +24,31 @@
 
     & .service-container {
         display: flex;
-        flex-direction : column;
         gap: 2rem;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
 
-        & .service-inspection-content {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-
-        & .service-image-content,
-        .service-custom-content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-
-        & .service-sub-content {
-            width: 50%;
-            height: 100%;
-            align-items: center;
-            padding: 50px;
+        & .p-card.p-component.service-card {
+            width: 14.8rem;
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
-
-            & .service-title {
-                font-weight: bold;
-                text-decoration: underline;
-                font-size: 1.25rem;
-            }
-
-            & .service-description {
-                text-align: center;
-            }
-
-            & .service-button {
-                background-color: #E0E0E0;
-                padding: 0.5rem;
-                border-radius: 0.25rem;
-            }
         }
 
-        & .image {
-            width: 50%;
-            height: auto;
+        & .img-card-service {
+            border-style: none;
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
         }
 
-        & img.v-img__img.v-img__img--cover {
-            width: 98%;
+        & .p-card-body {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex: 1;
+            justify-content: space-between;
         }
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    & .service-image-content,
-    .service-custom-content,
-    .service-inspection-content {
-        display: flex;
-        flex-direction: column !important;
-        gap: 1rem;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    & .service-sub-content {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    & .image {
-        width: 100% !important;
-        height: auto;
-    }
-
-    & img.v-img__img.v-img__img--cover {
-        width: 100% !important;
     }
 }

@@ -1,13 +1,17 @@
-export default {
-  data() {
-    return {
-      showMobileMenu: false
-    }
-  },
+import { type Ref, ref } from 'vue'
 
-  methods: {
-    showMenu() {
-      this.showMobileMenu = !this.showMobileMenu;
+export default {
+
+  setup() {
+    const showMobileMenu: Ref<boolean> = ref(false);
+
+    const showMenu = () => {
+      showMobileMenu.value = !showMobileMenu.value;
+    };
+
+    return {
+      showMobileMenu,
+      showMenu
     }
   }
 }

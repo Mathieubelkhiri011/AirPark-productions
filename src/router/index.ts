@@ -10,6 +10,22 @@ const router = createRouter({
       name: 'home',
       components: { default: Home, header: Navbar },
     },
+    {
+      path: '/service/photo-video',
+      name: 'PhotoVideo',
+      components: { default: Home, header: Navbar },
+    },
+    {
+      path: '/service/inspection',
+      name: 'inspection',
+      components: { default: Home, header: Navbar },
+    },
+    {
+      path: '/service/personnalisable',
+      name: 'personnalisable',
+      components: { default: Home, header: Navbar },
+    },
+
   ]
 })
 

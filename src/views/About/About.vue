@@ -1,0 +1,43 @@
+<template>
+  <div class="about">
+    <h1 class="about-title title font-lighter w-100">Pourquoi nous choisir ?</h1>
+    <section class="presentation-container">
+      <div class="presentation-content">
+      <span class="presentation">
+        Bienvenue chez AirPark-productions, votre entreprise de référence pour les services de drone en France. Spécialisée dans l’inspection par drone, la thermographie aérienne, la photogrammétrie et les solutions Time lapse pour les chantiers, notre équipe d’experts dédiés s’engage à vous fournir un service de haute qualité pour répondre à vos besoins spécifiques.
+      </span>
+      </div>
+    </section>
+    <section class="service-container">
+      <article class="service-image-content">
+        <v-img :src="expertise.image" cover class="image" alt="Image" />
+        <div class="service-sub-content">
+          <span class="service-title"> {{expertise.title}} </span>
+          <span class="service-description">{{ expertise.description }}</span>
+        </div>
+      </article>
+
+
+      <article class="service-inspection-content">
+        <v-img :src="qualite.image" cover class="image" alt="Image" />
+        <div class="service-sub-content">
+          <span class="service-title"> {{qualite.title}} </span>
+          <span class="service-description">{{ qualite.description }}</span>
+        </div>
+      </article>
+
+
+      <article class="service-custom-content">
+        <v-img :src="integrite.image" cover class="image" alt="Image" />
+        <div class="service-sub-content">
+          <span class="service-title"> {{integrite.title}} </span>
+          <span class="service-description">{{ integrite.description }}</span>
+        </div>
+      </article>
+
+    </section>
+  </div>
+</template>
+
+<script src="./About.ts"/>
+<style src="./About.css"></style>

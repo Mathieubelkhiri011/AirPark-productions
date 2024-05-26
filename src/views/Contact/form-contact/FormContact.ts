@@ -2,6 +2,7 @@ import { ApiSendEmail } from '@/constants/ApiUrls'
 import ButtonOutline from '@/components/shared/button/button-outline/ButtonOutline.vue'
 import { ref, type Ref } from 'vue'
 import type { Email } from '@/models/email'
+import type { Snackbar } from '@/models/snackbar'
 
 export default {
   components: {
@@ -16,7 +17,7 @@ export default {
       email: null,
       phone: null,
       body: null
-    })
+    });
 
     const errors = ref({
       type: false,
@@ -25,91 +26,93 @@ export default {
       email: false,
       phone: false,
       body: false
-    })
+    });
 
     const loading: Ref<boolean> = ref(false);
 
-    let snackbar = ref({
+    const snackbar: Ref<Snackbar> = ref({
       show : false,
-      icon : "mdi-checkbox-marked-circle",
+      icon : 'mdi-checkbox-marked-circle',
       color : 'green',
-      text : 'Une erreur est survenue lors de l\'envoi !'
+      text : "Une erreur est survenue lors de l'envoi !"
     });
 
-    return {
-      mail,
-      errors,
-      loading,
-      snackbar
-    }
-  },
-
-  methods: {
-    required(v) {
+    const required = (v: any) => {
       return !!v || ''
-    },
+    };
 
-    async send() {
+    const validateForm = () => {
+      errors.value = {
+        type: !mail.value.type,
+        firstname: !mail.value.firstname,
+        lastname: !mail.value.lastname,
+        email: !mail.value.email,
+        phone: !mail.value.phone,
+        body: !mail.value.body
+      };
+
+      return !Object.values(errors.value).includes(true)
+    };
+
+    const send = async () => {
       try {
         const response = await fetch(ApiSendEmail, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(this.mail)
-        })
+          body: JSON.stringify(mail.value)
+        });
 
         if (!response.ok) {
-          this.snackbar = {
+          snackbar.value = {
             show : true,
             icon : 'mdi-cancel',
             color : 'red',
-            text : `Une erreur est survenu lors de l'envoi du mail : ${response.statusText}`
+            text : `Une erreur est survenue lors de l'envoi du mail : ${response.statusText}`
           };
         } else {
-          this.snackbar = {
+          snackbar.value = {
             show : true,
             icon : 'mdi-checkbox-marked-circle',
             color : 'green',
             text : `Mail envoyé avec succès !`
           };
         }
-        this.loading = false
+        loading.value = false;
       } catch (error) {
-        this.snackbar = {
+        snackbar.value = {
           show : true,
           icon : 'mdi-cancel',
           color : 'red',
-          text : `Une erreur est survenu lors de l'envoi du mail : ${error}`
+          text : `Une erreur est survenue lors de l'envoi du mail : ${error}`
         };
       }
-    },
+    };
 
-    validateForm() {
-      this.errors = {
-        type: !this.mail.type,
-        firstname: !this.mail.firstname,
-        lastname: !this.mail.lastname,
-        email: !this.mail.email,
-        phone: !this.mail.phone,
-        body: !this.mail.body
-      }
-
-      return !Object.values(this.errors).includes(true)
-    },
-
-    submitForm() {
-      if (this.validateForm()) {
-        this.loading = true
-        //this.send()
+    const submitForm = () => {
+      if (validateForm()) {
+        loading.value = true;
+        send();
       } else {
-        this.snackbar = {
+        snackbar.value = {
           show : true,
           icon : 'mdi-cancel',
           color : 'red',
-          text : "Veuillez saisie tous les champs obligatoires !"
+          text : "Veuillez saisir tous les champs obligatoires !"
         };
       }
+    };
+
+    return {
+      mail,
+      errors,
+      loading,
+      snackbar,
+      required,
+      validateForm,
+      send,
+      submitForm
     }
   }
 }
