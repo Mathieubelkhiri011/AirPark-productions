@@ -10,7 +10,7 @@
     </section>
     <section class="service-container">
       <article class="service-image-content">
-        <v-img :src="expertise.image" cover class="image" alt="Image" />
+        <img :src="expertise.image"  class="image" alt="Image" />
         <div class="service-sub-content">
           <span class="service-title"> {{expertise.title}} </span>
           <span class="service-description">{{ expertise.description }}</span>
@@ -19,7 +19,7 @@
 
 
       <article class="service-inspection-content">
-        <v-img :src="qualite.image" cover class="image" alt="Image" />
+        <img :src="qualite.image"  class="image" alt="Image" />
         <div class="service-sub-content">
           <span class="service-title"> {{qualite.title}} </span>
           <span class="service-description">{{ qualite.description }}</span>
@@ -28,7 +28,7 @@
 
 
       <article class="service-custom-content">
-        <v-img :src="integrite.image" cover class="image" alt="Image" />
+        <img :src="integrite.image"  class="image" alt="Image" />
         <div class="service-sub-content">
           <span class="service-title"> {{integrite.title}} </span>
           <span class="service-description">{{ integrite.description }}</span>

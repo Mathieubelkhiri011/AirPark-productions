@@ -1,5 +1,5 @@
 // apiService.js
-export async function fetchData(endpoint) {
+export async function fetchData(endpoint: string) {
     try {
         const response = await fetch(`${endpoint}`);
         return await response.json();
