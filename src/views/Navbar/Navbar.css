@@ -1,6 +1,16 @@
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 1280px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .name {
@@ -8,7 +18,8 @@ a {
 }
 
 .nav-menu {
-    background-color: white;
+    color: white;
+    background-color: transparent;
 }
 
 .button-pi-bars{

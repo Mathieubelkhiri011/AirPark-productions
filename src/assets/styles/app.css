@@ -5,6 +5,19 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background-image: url("https://www.dexan.fr/wp-content/uploads/2023/06/dexan-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1, span {
+        color: white !important;
+    }
+
+    .wrapper {
+        margin-top: 4rem;
+    }
 
     .container {
         width: 90%; /* This gives the container a width of 90% of the viewport */

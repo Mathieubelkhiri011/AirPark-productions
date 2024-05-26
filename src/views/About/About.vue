@@ -19,8 +19,8 @@
 
 
       <article class="service-inspection-content">
-        <v-img :src="qualite.image" cover class="image" alt="Image" />
-        <div class="service-sub-content">
+        <v-img :src="qualite.image" cover class="image img-inspection" alt="Image" />
+        <div class="service-sub-content inspection">
           <span class="service-title"> {{qualite.title}} </span>
           <span class="service-description">{{ qualite.description }}</span>
         </div>
