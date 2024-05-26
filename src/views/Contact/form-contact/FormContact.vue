@@ -1,5 +1,5 @@
 <template>
-  <!--v-snackbar
+  <v-snackbar
     v-model="snackbar.show"
     :timeout="10000"
   >
@@ -88,7 +88,7 @@
     />
 
     <ButtonOutline label="Envoyer" :loading="loading" @click="submitForm"></ButtonOutline>
-  </div-->
+  </div>
 </template>
 
 <script src="./FormContact.ts" />

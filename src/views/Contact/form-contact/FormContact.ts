@@ -1,9 +1,13 @@
 import { ApiSendEmail } from '@/constants/ApiUrls'
+import ButtonOutline from '@/components/shared/button/button-outline/ButtonOutline.vue'
 import { ref, type Ref } from 'vue'
 import type { Email } from '@/models/email'
 import type { Snackbar } from '@/models/snackbar'
 
 export default {
+  components: {
+    ButtonOutline
+  },
 
   setup() {
     const mail: Ref<Email> = ref({
