@@ -10,4 +10,4 @@
   </v-btn>
 </template>
 
-<script src="./ButtonOutline.js"/>
+<script src="./ButtonOutline.ts"/>

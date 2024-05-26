@@ -12,5 +12,5 @@
   </div>
 </template>
 
-<script src="./Contact.js" />
+<script src="./Contact.ts" />
 <style src="./Contact.css"></style>

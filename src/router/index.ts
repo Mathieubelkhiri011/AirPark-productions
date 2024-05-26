@@ -8,17 +8,17 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      components: { default: Home, header: Navbar },
+      components: { default: Home, navbar: Navbar },
     },
     {
       path: '/service/photo-video',
       name: 'PhotoVideo',
-      components: { default: Home, header: Navbar },
+      components: { default: Home, navbar: Navbar },
     },
     {
       path: '/service/inspection',
       name: 'inspection',
-      components: { default: Home, header: Navbar },
+      components: { default: Home, navbar: Navbar },
     },
     {
       path: '/service/personnalisable',

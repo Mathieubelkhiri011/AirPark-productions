@@ -4,7 +4,7 @@ import { RouterView } from 'vue-router'
 
 <template>
   <div class="app">
-    <router-view name="header" />
+    <router-view name="navbar" />
     <div class="wrapper">
       <router-view />
     </div>
