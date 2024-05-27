@@ -1,11 +1,26 @@
-.image-container {
-    width: 100%;
-    max-height: 20rem;
-    overflow: hidden; /* This ensures that any part of the image exceeding 200px is not visible */
-}
+
 
 .responsive-image {
     width: 100%;
-    max-height: 20rem;
+    max-height: 100vh;
     object-fit: cover; /* Ensures the image covers the container without being distorted */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.large-image {
+    display: block;
+}
+
+.small-image {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    transform: scaleY(-1);
 }

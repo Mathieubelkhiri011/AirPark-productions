@@ -1,7 +1,8 @@
 import serviceImageRecord from '@/assets/images/serviceImageRecord.webp'
-import serviceCustomImage from '@/assets/images/serviceCustom.webp'
-import Button from 'primevue/button'
-import Card from 'primevue/card'
+import serviceCustomImage from '@/assets/images/serviceCustom.webp';
+
+import Button from 'primevue/button';
+import Card from 'primevue/card';
 
 export default {
   components: {

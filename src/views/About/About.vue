@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="about-title title font-lighter w-100">Pourquoi nous choisir ?</h1>
+    <h1 class="about-title title w-100">Pourquoi nous choisir ?</h1>
     <section class="presentation-container">
       <div class="presentation-content">
       <span class="presentation">

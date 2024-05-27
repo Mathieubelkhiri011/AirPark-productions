@@ -1,4 +1,4 @@
-import { type Ref, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, type Ref, ref } from 'vue'
 
 export default {
 
@@ -9,8 +9,29 @@ export default {
       showMobileMenu.value = !showMobileMenu.value;
     };
 
+    const isScrolled = ref(false);
+
+    const navbarClass = computed(() => ({
+      navbar: true,
+      transparent: !isScrolled.value,
+      scrolled: isScrolled.value
+    }));
+
+    const handleScroll = () => {
+      isScrolled.value = window.scrollY > 0;
+    };
+
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('scroll', handleScroll);
+    });
+
     return {
       showMobileMenu,
+      navbarClass,
       showMenu
     }
   }

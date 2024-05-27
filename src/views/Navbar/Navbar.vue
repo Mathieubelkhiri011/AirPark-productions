@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div :class="navbarClass">
     <div class="container nav-menu">
       <div class="button-pi-bars">
         <i class="pi pi-bars" :class="this.showMobileMenu ? 'pi-bars-open-menu' : 'pi-bars-closed-menu'" @click="showMenu()"></i>

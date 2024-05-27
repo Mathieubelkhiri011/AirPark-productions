@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <h1 class="title font-lighter">CONTACT</h1>
+    <h1 class="contact-title title">CONTACT</h1>
     <div class="sub-title-container">
       <div class="sub-title-content">
         <span class="sub-title">

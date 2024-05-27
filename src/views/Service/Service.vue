@@ -1,6 +1,6 @@
 <template>
   <div class="service">
-    <h1 class="service-title title font-lighter w-100">Une gamme de prestation de drone conçus pour vous</h1>
+    <h1 class="service-title title w-100">Une gamme de prestation de drone conçus pour vous</h1>
     <section class="presentation-container">
       <div class="presentation-content">
       <span class="presentation">

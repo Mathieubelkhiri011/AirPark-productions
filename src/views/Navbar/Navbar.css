@@ -1,11 +1,16 @@
 .navbar {
-    background-color: black;
     position: fixed;
-    width: 1280px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    top: 0px;
+    width: 100%;
+    transition: background-color 0.5s ease;
     z-index: 1;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 a {

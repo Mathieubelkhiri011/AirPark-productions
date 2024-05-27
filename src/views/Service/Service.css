@@ -1,4 +1,5 @@
 .service {
+    margin-bottom: 4rem;
     margin-block: 2rem;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@
             width: 14.8rem;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
         & .img-card-service {
@@ -40,6 +42,8 @@
             width: 100%;
             height: 10rem;
             object-fit: cover;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
         }
 
         & .p-card-body {

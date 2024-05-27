@@ -4,6 +4,12 @@
   flex-direction: column;
   gap: 2rem;
 
+  & .contact-title {
+    display: block;
+    text-align: center;
+    font-size: 3vw;
+  }
+
   .sub-title-content {
     text-align: center;
 
@@ -16,5 +22,6 @@
   .title {
     display: block;
     text-align: center;
+    font-size: 4vw;
   }
 }
