@@ -1,16 +1,23 @@
 <template>
-  <div class="contact-container">
-    <h1 class="contact-title title">CONTACT</h1>
-    <div class="sub-title-container">
-      <div class="sub-title-content">
-        <span class="sub-title">
-          According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent this year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.
-        </span>
+  <div class="container contact">
+    <div class="side-info-contact">
+      <div class="info">
+        <div>
+          <h1>Discutons</h1>
+          <span>Vous souhaitez nous transmettre votre projet ?</span>
+          <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
+          <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
+        </div>
+        <span>airparkproductions@gmail.com</span>
+        <span>06.17.13.51.54</span>
       </div>
     </div>
-    <FormContact></FormContact>
+
+    <div class="side-formulaire-contact">
+      <FormContact></FormContact>
+    </div>
   </div>
 </template>
 
-<script src="./Contact.ts" />
+<script src="./Contact.ts"/>
 <style src="./Contact.css"></style>

@@ -14,14 +14,12 @@
     <div id="services">
       <Service />
     </div>
-
-    <Divider />
+   </div>
 
     <div id="contact">
       <Contact />
     </div>
 
-  </div>
 </template>
 
 <script src="./Home.ts"/>

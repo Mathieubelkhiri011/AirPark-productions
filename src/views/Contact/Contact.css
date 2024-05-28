@@ -1,27 +1,40 @@
-.contact-container {
-  margin-block: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.contact {
+    display: flex;
+    gap: 2%;
 
-  & .contact-title {
-    display: block;
-    text-align: center;
-    font-size: 3vw;
-  }
-
-  .sub-title-content {
-    text-align: center;
-
-    .sub-title {
-      width: 75%;
-      display: inline-flex;
+    & .side-formulaire-contact {
+        background-color: white;
+        border-radius: 0.25rem;
+        padding: 2rem;
+        width: 49%;
     }
-  }
 
-  .title {
-    display: block;
-    text-align: center;
-    font-size: 4vw;
+    & .side-info-contact {
+        width: 49%;
+        color: white;
+
+        & .info {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 2%;
+
+      & .side-formulaire-contact {
+          width: 100%;
+      }
+
+      & .side-info-contact {
+          width: 100%;
+          margin-bottom: 3rem;
+      }
   }
 }
