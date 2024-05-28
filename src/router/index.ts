@@ -3,7 +3,7 @@ import Home from '@/views/Home/Home.vue';
 import Navbar from '@/views/Navbar/Navbar.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/AirPark-productions/'),
   routes: [
     {
       path: '/home',
@@ -25,7 +25,6 @@ const router = createRouter({
       name: 'personnalisable',
       components: { default: Home, header: Navbar },
     },
-
   ]
 })
 

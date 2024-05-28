@@ -10,14 +10,4 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
-    },
-  },
-
-  logLevel: 'info', // Ajoutez ceci pour obtenir plus de logs
 })
