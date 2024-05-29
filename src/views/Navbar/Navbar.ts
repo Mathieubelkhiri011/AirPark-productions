@@ -14,7 +14,9 @@ export default {
     const navbarClass = computed(() => ({
       navbar: true,
       transparent: !isScrolled.value,
-      scrolled: isScrolled.value
+      scrolled: isScrolled.value,
+      'open-menu': showMobileMenu.value,
+      'closed-menu': !showMobileMenu.value
     }));
 
     const handleScroll = () => {

@@ -5,14 +5,21 @@
         <i class="pi pi-bars" :class="this.showMobileMenu ? 'pi-bars-open-menu' : 'pi-bars-closed-menu'" @click="showMenu()"></i>
       </div>
       <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
-        <div class="name">AirPark-productions</div>
+        <div class="name">
+          <router-link to="/home">
+            AirPark-productions
+          </router-link>
+        </div>
         <ul class="nav-items">
-          <li>Accueil</li>
-          <li><a href="#about">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><router-link to="/home">Prise de vue</router-link></li>
+          <li><router-link to="/home">Photogrammétrie</router-link></li>
+          <li><router-link to="/home">Inspection</router-link></li>
+          <li><router-link to="/home">Thermographie</router-link></li>
         </ul>
-        <div class="socials-networks">
-          <li><a href="#contact">Contactez-nous</a></li>
+        <div class="navbar-contact">
+          <router-link class="link-button-contact" to="/contact">
+            <span>Contactez-nous</span>
+          </router-link>
         </div>
       </div>
     </div>

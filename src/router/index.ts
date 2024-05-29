@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home/Home.vue';
+import Contact from '@/views/Contact/Contact.vue';
 import Navbar from '@/views/Navbar/Navbar.vue'
 
 const routes = [
@@ -8,6 +9,11 @@ const routes = [
     name: 'home',
     components: { default: Home, navbar: Navbar },
   },
+  {
+      path: '/contact',
+      name: 'contact',
+      components: { default: Contact, navbar: Navbar },
+    },
   {
     path: '/service/photo-video',
     name: 'PhotoVideo',
@@ -25,7 +31,7 @@ const routes = [
   },
   {
     path: '/:catchAll(.*)',
-    redirect: '/home', // ou une route 404 personnalisée
+    redirect: '/home',
   },
 ]
 

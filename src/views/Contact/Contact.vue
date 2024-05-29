@@ -1,4 +1,5 @@
 <template>
+    <div class="contact-global">
   <div class="container contact">
     <div class="side-info-contact">
       <div class="info">
@@ -18,6 +19,7 @@
     <div class="side-formulaire-contact">
       <FormContact></FormContact>
     </div>
+  </div>
   </div>
 </template>
 
