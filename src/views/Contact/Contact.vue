@@ -10,8 +10,14 @@
             <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
             <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
           </div>
-          <span>airparkproductions@gmail.com</span>
-          <span>06.17.13.51.54</span>
+          <a class="contact-email" href="mailto:airparkproductions@gmail.com">
+            <span>
+              airparkproductions@gmail.com
+            </span>
+          </a>
+          <a class="contact-phone" href="tel:+33617135154">
+            <span>06.17.13.51.54</span>
+          </a>
         </div>
       </div>
     </div>
