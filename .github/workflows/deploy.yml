@@ -5,6 +5,9 @@ on:
     branches:
       - main # Branche de votre projet à partir de laquelle vous déployez
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
