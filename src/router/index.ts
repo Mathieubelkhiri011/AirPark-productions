@@ -16,7 +16,7 @@ const routes = [
     },
   {
     path: '/service/photo-video',
-    name: 'PhotoVideo',
+    name: 'PhotoVide',
     components: { default: Home, navbar: Navbar },
   },
   {
