@@ -2,14 +2,16 @@
   <div class="container contact">
     <div class="side-info-contact">
       <div class="info">
-        <div>
-          <h1>Discutons</h1>
-          <span>Vous souhaitez nous transmettre votre projet ?</span>
-          <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
-          <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
+        <div class="info-content">
+          <div>
+            <h1>Discutons</h1>
+            <span>Vous souhaitez nous transmettre votre projet ?</span>
+            <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
+            <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
+          </div>
+          <span>airparkproductions@gmail.com</span>
+          <span>06.17.13.51.54</span>
         </div>
-        <span>airparkproductions@gmail.com</span>
-        <span>06.17.13.51.54</span>
       </div>
     </div>
 

@@ -14,10 +14,17 @@
         color: white;
 
         & .info {
-            height: 50%;
-            display: flex;
+            height: 100%;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            display: flex;
+            gap: 2%;
+
+            & .info-content {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+            }
         }
     }
 }
