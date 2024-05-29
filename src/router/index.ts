@@ -31,15 +31,6 @@ const routes = [
   },
 
   {
-    path: '/home',
-    redirect: '/home',
-  },
-
-  {
-    path: '/contact',
-    redirect: '/contact',
-  },
-  {
     path: '/:catchAll(.*)',
     redirect: '/home',
   },
