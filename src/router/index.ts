@@ -29,6 +29,16 @@ const routes = [
     name: 'personnalisable',
     components: { default: Home, header: Navbar },
   },
+
+  {
+    path: '/home',
+    redirect: '/home',
+  },
+
+  {
+    path: '/contact',
+    redirect: '/contact',
+  },
   {
     path: '/:catchAll(.*)',
     redirect: '/home',
