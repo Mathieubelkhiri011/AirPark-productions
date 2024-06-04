@@ -68,7 +68,7 @@
       />
 
       <v-text-field
-        label="Téléphone *"
+        label="Téléphone"
         v-model="mail.phone"
         :rules="[required]"
         variant="outlined"

@@ -1,0 +1,62 @@
+.responsive-image {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.large-image {
+    display: block;
+}
+
+.small-image {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    transform: scaleY(-1);
+}
+
+.details-service {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+    & .infos-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .p-card.p-component.infos-details-card {
+           max-width: 30%;
+           margin: 1%;
+           padding: 1%;
+
+           & .p-card-body {
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+           }
+
+           & .link-button-contact {
+               font-weight: 600;
+               background-color: #3A6883;
+               border-style: solid;
+               border-width: 2px 2px 2px 2px;
+               border-color: white;
+               border-radius: 20px 20px 20px 20px;
+               padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+               display: inline-block;
+               text-align: center;
+           }
+        }
+    }
+}

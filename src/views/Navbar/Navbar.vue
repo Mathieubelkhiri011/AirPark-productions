@@ -7,14 +7,12 @@
       <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
         <div class="name">
           <router-link to="/home">
-            AirPark-productions
+            <img :src="logo" alt="Logo AirPark" class="logo" />
           </router-link>
         </div>
         <ul class="nav-items">
-          <li><router-link to="/home">Prise de vue</router-link></li>
-          <li><router-link to="/home">Photogrammétrie</router-link></li>
-          <li><router-link to="/home">Inspection</router-link></li>
-          <li><router-link to="/home">Thermographie</router-link></li>
+          <li><router-link :to="{ name: 'service', params: { service: 'prise-vue' }}">Prise de vue</router-link></li>
+          <li><router-link :to="{ name: 'service', params: { service: 'inspection' }}">Inspection</router-link></li>
         </ul>
         <div class="navbar-contact">
           <router-link class="link-button-contact" to="/contact">

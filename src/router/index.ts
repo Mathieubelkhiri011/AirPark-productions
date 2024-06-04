@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home/Home.vue';
 import Contact from '@/views/Contact/Contact.vue';
-import Navbar from '@/views/Navbar/Navbar.vue'
+import Navbar from '@/views/Navbar/Navbar.vue';
+import DetailsService from '@/views/DetailsService/DetailsService.vue';
 
 const routes = [
   {
@@ -10,24 +11,14 @@ const routes = [
     components: { default: Home, navbar: Navbar },
   },
   {
-      path: '/contact',
-      name: 'contact',
-      components: { default: Contact, navbar: Navbar },
-    },
-  {
-    path: '/service/photo-video',
-    name: 'PhotoVide',
-    components: { default: Home, navbar: Navbar },
+    path: '/contact',
+    name: 'contact',
+    components: { default: Contact, navbar: Navbar },
   },
   {
-    path: '/service/inspection',
-    name: 'inspection',
-    components: { default: Home, navbar: Navbar },
-  },
-  {
-    path: '/service/personnalisable',
-    name: 'personnalisable',
-    components: { default: Home, header: Navbar },
+    path: '/service/:service',
+    name: 'service',
+    components: { default: DetailsService, navbar: Navbar },
   },
 
   {

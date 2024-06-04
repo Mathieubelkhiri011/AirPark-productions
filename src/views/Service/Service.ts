@@ -1,5 +1,5 @@
-import serviceImageRecord from '@/assets/images/serviceImageRecord.webp'
-import serviceCustomImage from '@/assets/images/serviceCustom.webp';
+import imagePriseDeVue from '@/assets/images/servicePriseVue.jpg';
+import imageInspection from '@/assets/images/serviceInspection.jpg';
 
 import Button from 'primevue/button';
 import Card from 'primevue/card';
@@ -11,31 +11,23 @@ export default {
   },
 
   setup() {
-    const serviceImage = {
-      title: 'Expertise et innovation',
-      description: 'Notre équipe est composée de professionnels qualidiés et passionnées par les technologies de pointes...',
-      image: serviceImageRecord,
-      urlRedirect: '/service/photos-videos'
-    }
-
-    const serviceInspections = {
-      title: 'Qualité et précision',
+    const servicePriseDeVue = {
+      title: 'Prise de vue',
       description: 'Nous nous engageons à fournir des images et des données de haute qualité avec une grande précision inégalée...',
-      image: serviceImageRecord,
+      image: imagePriseDeVue,
       urlRedirect: '/service/inspections'
     }
 
-    const serviceCustom = {
-      title: 'Intégrité',
+    const serviceInspections = {
+      title: 'Inspection',
       description: 'Nous pronons la transparence, l\'honnêté et la sincérié dans tous les demaines...',
-      image: serviceCustomImage,
+      image: imageInspection,
       urlRedirect: '/service/personnalises'
     }
 
     return {
-      serviceImage,
-      serviceInspections,
-      serviceCustom
+      servicePriseDeVue,
+      serviceInspections
     }
   }
 }

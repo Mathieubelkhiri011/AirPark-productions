@@ -1,5 +1,7 @@
 import { computed, onBeforeUnmount, onMounted, type Ref, ref } from 'vue'
 
+import logo from '@/assets/images/logoAirPark.png';
+
 export default {
 
   setup() {
@@ -32,6 +34,7 @@ export default {
     });
 
     return {
+      logo,
       showMobileMenu,
       navbarClass,
       showMenu

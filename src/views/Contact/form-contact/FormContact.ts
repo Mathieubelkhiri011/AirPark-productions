@@ -24,7 +24,6 @@ export default {
       firstname: false,
       lastname: false,
       email: false,
-      phone: false,
       body: false
     });
 
@@ -47,7 +46,6 @@ export default {
         firstname: !mail.value.firstname,
         lastname: !mail.value.lastname,
         email: !mail.value.email,
-        phone: !mail.value.phone,
         body: !mail.value.body
       };
 

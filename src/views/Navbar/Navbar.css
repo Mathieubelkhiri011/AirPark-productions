@@ -21,6 +21,10 @@ a {
 
 .name {
     font-weight: bold;
+
+    & .logo {
+      height: 3.75rem;
+    }
 }
 
 .nav-menu {
@@ -76,7 +80,6 @@ a {
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
     }
 
     .nav-menu .closed-menu {
@@ -97,6 +100,7 @@ a {
 
     .nav-items {
         flex-direction: column;
+        margin-bottom: 2rem !important;
     }
 
     .button-pi-bars {

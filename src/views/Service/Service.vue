@@ -11,15 +11,17 @@
     <section class="service-container">
       <Card class="service-card">
         <template #header>
-          <img class="img-card-service" alt="service image" :src="serviceImage.image" />
+          <img class="img-card-service" alt="service image" :src="servicePriseDeVue.image" />
         </template>
-        <template #title>{{ serviceImage.title }}</template>
+        <template #title>{{ servicePriseDeVue.title }}</template>
         <template #content>
-          {{ serviceImage.description }}
+          {{ servicePriseDeVue.description }}
         </template>
         <template #footer>
           <div class="flex gap-3 mt-1">
-            <Button label="Voir plus" class="w-full" />
+            <router-link class="link-button-contact" :to="servicePriseDeVue.urlRedirect">
+              <span>Voir plus</span>
+            </router-link>
           </div>
         </template>
       </Card>
@@ -34,37 +36,9 @@
         </template>
         <template #footer>
           <div class="flex gap-3 mt-1">
-            <Button label="Voir plus" class="w-full" />
-          </div>
-        </template>
-      </Card>
-
-      <Card class="service-card">
-        <template #header>
-          <img class="img-card-service" alt="service custom" :src="serviceCustom.image" />
-        </template>
-        <template #title>{{ serviceCustom.title }}</template>
-        <template #content>
-          {{ serviceCustom.description }}
-        </template>
-        <template #footer>
-          <div class="flex gap-3 mt-1">
-            <Button label="Voir plus" class="w-full" />
-          </div>
-        </template>
-      </Card>
-
-      <Card class="service-card">
-        <template #header>
-          <img class="img-card-service" alt="service othen" :src="serviceImage.image" />
-        </template>
-        <template #title>{{ serviceImage.title }}</template>
-        <template #content>
-          {{ serviceImage.description }}
-        </template>
-        <template #footer>
-          <div class="flex gap-3 mt-1">
-            <Button label="Voir plus" class="w-full" />
+            <router-link class="link-button-contact" :to="serviceInspections.urlRedirect">
+              <span>Voir plus</span>
+            </router-link>
           </div>
         </template>
       </Card>
