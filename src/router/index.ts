@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/views/Home/Home.vue';
 import Contact from '@/views/Contact/Contact.vue';
 import Navbar from '@/views/Navbar/Navbar.vue';
@@ -28,7 +28,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/AirPark-productions/'),
+  history: createWebHashHistory(),
   routes,
 })
 
