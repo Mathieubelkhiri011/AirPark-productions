@@ -3,9 +3,13 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig({
-  plugins: [vue()],
-  base: '/AirPark-productions/',
-  resolve: {
+  plugins: [
+      Vue(),
+      Pages({
+        base: '/AirPark-productions/',
+      }),
+    ],
+    resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
