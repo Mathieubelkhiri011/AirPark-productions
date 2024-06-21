@@ -15,14 +15,24 @@ export default {
       title: 'Prise de vue',
       description: 'Nous nous engageons à fournir des images et des données de haute qualité avec une grande précision inégalée...',
       image: imagePriseDeVue,
-      urlRedirect: '/service/inspections'
+      urlRedirect: {
+         name: 'service',
+         params: {
+           service: 'prise-vue'
+         }
+      }
     }
 
     const serviceInspections = {
       title: 'Inspection',
       description: 'Nous pronons la transparence, l\'honnêté et la sincérié dans tous les demaines...',
       image: imageInspection,
-      urlRedirect: '/service/personnalises'
+      urlRedirect: {
+        name: 'service',
+        params: {
+            service: 'inspection'
+        }
+      }
     }
 
     return {
