@@ -3,12 +3,10 @@ module.exports = {
     ? '/AirPark-productions/'
     : '/',
   devServer: {
-      historyApiFallback: {
-        rewrites: [
-          { from: /^\/AirPark-productions\/home/, to: '/AirPark-productions/index.html' },
-        ],
-      },
-    },
+    headers: { "Cache-Control": "no-cache, no-store, must-revalidate" },
+    port: 8080,
+    historyApiFallback: true,
+  },
   pwa: {
     name: 'AirPark-productions',
     themeColor: '#4e73df',
