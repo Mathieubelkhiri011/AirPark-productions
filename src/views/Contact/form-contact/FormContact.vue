@@ -87,6 +87,13 @@
       :error="errors.body"
     />
 
+    <div class="captcha-button">
+        <Recaptcha
+          siteKey="6LeAUf4pAAAAALaelr77mpzl2e2T8TtEKR9gZ97B"
+          @verify="onCaptchaVerified"
+        />
+    </div>
+
     <ButtonOutline label="Envoyer" :loading="loading" @click="submitForm"></ButtonOutline>
   </div>
 </template>

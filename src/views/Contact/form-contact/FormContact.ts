@@ -3,13 +3,17 @@ import ButtonOutline from '@/components/shared/button/button-outline/ButtonOutli
 import { ref, type Ref } from 'vue'
 import type { Email } from '@/models/email'
 import type { Snackbar } from '@/models/snackbar'
+import Recaptcha from '@/components/shared/recaptcha/Recaptcha.vue';
 
 export default {
   components: {
-    ButtonOutline
+    ButtonOutline,
+    Recaptcha
   },
 
   setup() {
+    const recaptchaToken = ref<string | null>(null);
+
     const mail: Ref<Email> = ref({
       type: null,
       firstname: null,
@@ -88,10 +92,19 @@ export default {
       }
     };
 
-    const submitForm = () => {
+    const submitForm = async () => {
       if (validateForm()) {
-        loading.value = true;
-        send();
+        if (recaptchaToken.value) {
+              loading.value = true;
+              await send();
+            } else {
+              snackbar.value = {
+                show: true,
+                icon: 'mdi-cancel',
+                color: 'red',
+                text: "Veuillez vérifier le reCAPTCHA."
+              };
+            }
       } else {
         snackbar.value = {
           show : true,
@@ -102,15 +115,20 @@ export default {
       }
     };
 
+    const onCaptchaVerified = (token: string) => {
+      recaptchaToken.value = token;
+    };
+
     return {
       mail,
-      errors,
-      loading,
-      snackbar,
-      required,
-      validateForm,
-      send,
-      submitForm
+        errors,
+        loading,
+        snackbar,
+        required,
+        validateForm,
+        send,
+        submitForm,
+        onCaptchaVerified
     }
   }
 }

@@ -15,16 +15,16 @@
       </section>
 
       <section class="infos-details">
-         <Card class="infos-details-card" v-for="details in service.details">
+         <Card class="infos-details-card" v-for="detail in service.details">
              <template #title>
-                {{ details.title }}
+                {{ detail.title }}
              </template>
              <template #content>
-                {{ details.description }}
+                {{ detail.description }}
              </template>
-             <template #footer v-if="details.button">
+             <template #footer v-if="detail.button">
                <div class="flex gap-3 mt-1">
-                 <router-link class="link-button-contact" :to="details.button">
+                 <router-link class="link-button-contact" :to="detail.button">
                    <span>Voir plus</span>
                  </router-link>
                </div>
