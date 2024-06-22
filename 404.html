@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>404</title>
+  <script type="text/javascript">
+    (function() {
+        var currentLocation = window.location;
+        var newPath = currentLocation.pathname.replace('/AirPark-productions', '');
+        window.location = currentLocation.origin + '/AirPark-productions' + newPath + currentLocation.search + currentLocation.hash;
+    })();
+  </script>
+</head>
+<body>
+<h1>404 Not Found</h1>
+<p>Redirecting...</p>
+</body>
+</html>
