@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>404</title>
+  <title>404 Not Found</title>
   <script type="text/javascript">
     (function() {
         var currentLocation = window.location;
-        // Vérifier si l'URL contient déjà le marqueur de redirection
-        if (!currentLocation.search.includes('redirected=true')) {
-            var newPath = currentLocation.pathname.replace('/AirPark-productions', '');
-            // Rediriger vers l'URL corrigée avec le marqueur de redirection
-            window.location = currentLocation.origin + '/AirPark-productions' + newPath + '?redirected=true' + currentLocation.hash;
+        var path = currentLocation.pathname;
+
+        // Vérifier si l'URL contient déjà le paramètre de redirection
+        if (path.indexOf('/AirPark-productions/') === 0 && path.indexOf('/AirPark-productions/404.html') !== 0) {
+            var newPath = path.replace('/AirPark-productions', '');
+            // Rediriger vers l'URL corrigée
+            window.location.replace(currentLocation.origin + '/AirPark-productions' + newPath + currentLocation.search + currentLocation.hash);
         } else {
-            // Afficher un message ou rediriger vers la page d'accueil si la boucle est détectée
-            document.write('<h1>404 Not Found</h1><p>Page not found. Redirecting to <a href="/AirPark-productions/home">home</a> in 5 seconds...</p>');
-            setTimeout(function() {
-                window.location = currentLocation.origin + '/AirPark-productions/home';
-            }, 5000);
+            document.write('<h1>404 Not Found</h1><p>The page you are looking for could not be found. Please <a href="/AirPark-productions/home">click here</a> to go back to the homepage.</p>');
         }
     })();
   </script>
