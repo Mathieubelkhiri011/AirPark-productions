@@ -64,7 +64,7 @@
         variant="outlined"
         density="compact"
         clearable
-        :error="errors.email"
+        :error="errors.from"
       />
 
       <v-text-field

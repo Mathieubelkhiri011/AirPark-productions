@@ -49,7 +49,7 @@ export default {
         type: !mail.value.type,
         firstname: !mail.value.firstname,
         lastname: !mail.value.lastname,
-        from: !mail.value.email,
+        from: !mail.value.from,
         body: !mail.value.body
       };
 
