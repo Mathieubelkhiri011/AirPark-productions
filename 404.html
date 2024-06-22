@@ -6,8 +6,18 @@
   <script type="text/javascript">
     (function() {
         var currentLocation = window.location;
-        var newPath = currentLocation.pathname.replace('/AirPark-productions', '');
-        window.location = currentLocation.origin + '/AirPark-productions' + newPath + currentLocation.search + currentLocation.hash;
+        // Vérifier si l'URL contient déjà le marqueur de redirection
+        if (!currentLocation.search.includes('redirected=true')) {
+            var newPath = currentLocation.pathname.replace('/AirPark-productions', '');
+            // Rediriger vers l'URL corrigée avec le marqueur de redirection
+            window.location = currentLocation.origin + '/AirPark-productions' + newPath + '?redirected=true' + currentLocation.hash;
+        } else {
+            // Afficher un message ou rediriger vers la page d'accueil si la boucle est détectée
+            document.write('<h1>404 Not Found</h1><p>Page not found. Redirecting to <a href="/AirPark-productions/home">home</a> in 5 seconds...</p>');
+            setTimeout(function() {
+                window.location = currentLocation.origin + '/AirPark-productions/home';
+            }, 5000);
+        }
     })();
   </script>
 </head>
