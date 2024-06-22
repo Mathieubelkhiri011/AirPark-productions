@@ -59,7 +59,7 @@
     <div class="form-info">
       <v-text-field
         label="Mail *"
-        v-model="mail.email"
+        v-model="mail.from"
         :rules="[required]"
         variant="outlined"
         density="compact"

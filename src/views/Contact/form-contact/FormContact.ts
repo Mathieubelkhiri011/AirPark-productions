@@ -18,7 +18,7 @@ export default {
       type: null,
       firstname: null,
       lastname: null,
-      email: null,
+      from: null,
       phone: null,
       body: null
     });
@@ -27,7 +27,7 @@ export default {
       type: false,
       firstname: false,
       lastname: false,
-      email: false,
+      from: false,
       body: false
     });
 
@@ -49,7 +49,7 @@ export default {
         type: !mail.value.type,
         firstname: !mail.value.firstname,
         lastname: !mail.value.lastname,
-        email: !mail.value.email,
+        from: !mail.value.email,
         body: !mail.value.body
       };
 
