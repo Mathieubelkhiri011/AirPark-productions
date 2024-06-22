@@ -4,19 +4,9 @@
   <meta charset="utf-8">
   <title>404 Not Found</title>
   <script type="text/javascript">
-    (function() {
-        var currentLocation = window.location;
-        var path = currentLocation.pathname;
-
-        // Vérifier si l'URL contient déjà le paramètre de redirection
-        if (path.indexOf('/AirPark-productions/') === 0 && path.indexOf('/AirPark-productions/404.html') !== 0) {
-            var newPath = path.replace('/AirPark-productions', '');
-            // Rediriger vers l'URL corrigée
-            window.location.replace(currentLocation.origin + '/AirPark-productions' + newPath + currentLocation.search + currentLocation.hash);
-        } else {
-            document.write('<h1>404 Not Found</h1><p>The page you are looking for could not be found. Please <a href="/AirPark-productions/home">click here</a> to go back to the homepage.</p>');
-        }
-    })();
+    var pathName = window.location.pathname;
+    var redirectPath = '/AirPark-productions/redirect';
+    location.href = redirectPath + '?p=' + encodeURI(pathName);
   </script>
 </head>
 <body>
