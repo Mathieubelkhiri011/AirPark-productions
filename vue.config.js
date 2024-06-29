@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/AirPark-productions/'
+    : '/',
   devServer: {
     headers: { "Cache-Control": "no-cache, no-store, must-revalidate" },
     port: 8080,
