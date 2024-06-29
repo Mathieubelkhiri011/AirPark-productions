@@ -23,7 +23,9 @@ a {
     font-weight: bold;
 
     & .logo {
-      height: 3.75rem;
+        height: 1.25rem;
+        top: 0.25rem;
+        position: relative;
     }
 }
 
