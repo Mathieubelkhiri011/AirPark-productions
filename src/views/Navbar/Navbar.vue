@@ -11,8 +11,28 @@
           </router-link>
         </div>
         <ul class="nav-items">
-          <li><router-link :to="{ name: 'service', params: { service: 'prise-vue' }}">Prise de vue</router-link></li>
-          <li><router-link :to="{ name: 'service', params: { service: 'inspection' }}">Inspection</router-link></li>
+          <li @mouseover="showDropdownPriseVue = true" @mouseleave="showDropdownPriseVue = false">
+            <span>Prise de vue</span>
+            <ul v-if="showDropdownPriseVue" class="dropdown-menu">
+              <li><router-link :to="{ name: 'service', params: { service: 'inspection' }}">Evenementiel</router-link></li>
+              <li><router-link :to="{ name: 'service', params: { service: 'immmobilier' }}">Immmobilier</router-link></li>
+              <li><router-link :to="{ name: 'service', params: { service: 'reportages-documentaires' }}">Reportages / Documentaires</router-link></li>
+              <li><router-link :to="{ name: 'service', params: { service: 'promotion-marketing' }}">Promotion / Marketing</router-link></li>
+            </ul>
+          </li>
+          <li  class="nav-inspection" @mouseover="showDropdownInspection = true" @mouseleave="showDropdownInspection = false">
+            <span>Inspection de bâtiments</span>
+            <ul v-if="showDropdownInspection" class="dropdown-menu">
+              <li><router-link :to="{ name: 'service', params: { service: 'particulier' }}">Particulier</router-link></li>
+              <li><router-link :to="{ name: 'service', params: { service: 'professionnel' }}">Professionnel</router-link></li>
+            </ul>
+          </li>
+          <li @mouseover="showDropdownPhotogrammetrie = true" @mouseleave="showDropdownPhotogrammetrie = false">
+            <span>Photogrammétrie</span>
+            <ul v-if="showDropdownPhotogrammetrie" class="dropdown-menu">
+              <li><router-link :to="{ name: 'service', params: { service: 'topographie-cartographie' }}">Topographie / Cartographie</router-link></li>
+            </ul>
+          </li>
         </ul>
         <div class="navbar-contact">
           <router-link class="link-button-contact" to="/contact">

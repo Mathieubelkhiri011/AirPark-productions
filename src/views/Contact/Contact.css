@@ -33,6 +33,15 @@
                     text-decoration: underline;
                   }
 
+                  & .social-network {
+                    display: flex;
+                    gap: 1rem;
+
+                    & i {
+                      font-size: 1.5rem;
+                    }
+                  }
+
                   & span {
                     width: 100%;
                     display: block;

@@ -18,6 +18,11 @@
           <a class="contact-phone" href="tel:+33617135154">
             <span>06.17.13.51.54</span>
           </a>
+          <div class="social-network">
+            <i class="pi pi-instagram"></i>
+            <i class="pi pi-facebook"></i>
+            <i class="pi pi-pinterest"></i>
+          </div>
         </div>
       </div>
     </div>

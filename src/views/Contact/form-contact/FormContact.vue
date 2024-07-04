@@ -26,7 +26,16 @@
     <v-select
       label="Type de service *"
       v-model="mail.type"
-      :items="['Photo', 'Vidéo', 'Inspection', 'Personnalisation']"
+      :items="[
+        'Evenementiel',
+        'Immmobilier',
+        'Reportages / Documentaires',
+        'Personnalisation',
+        'Promotion / Marketing',
+        'Particulier',
+        'Professionnel',
+        'Topographie / Cartographie',
+        'Autre']"
       :rules="[required]"
       variant="outlined"
       density="compact"

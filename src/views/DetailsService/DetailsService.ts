@@ -6,13 +6,15 @@ import bottomHomeWallpaper  from '@/assets/images/bottomHomeWallpaper.svg';
 
 import Button from 'primevue/button';
 import Card from 'primevue/card';
+import Contact from '@/views/Contact/Contact.vue';
 
 export default {
   name: 'DetailsService',
 
   components: {
       Button,
-      Card
+      Card,
+      Contact
     },
 
   setup() {

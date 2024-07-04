@@ -7,6 +7,12 @@ export default {
   setup() {
     const showMobileMenu: Ref<boolean> = ref(false);
 
+    const showDropdownPriseVue: Ref<boolean> = ref(false);
+
+    const showDropdownInspection: Ref<boolean> = ref(false);
+
+    const showDropdownPhotogrammetrie: Ref<boolean> = ref(false);
+
     const showMenu = () => {
       showMobileMenu.value = !showMobileMenu.value;
     };
@@ -36,6 +42,9 @@ export default {
     return {
       logo,
       showMobileMenu,
+      showDropdownPriseVue,
+      showDropdownInspection,
+      showDropdownPhotogrammetrie,
       navbarClass,
       showMenu
     }

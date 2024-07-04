@@ -32,7 +32,10 @@
            </Card>
       </section>
     </div>
-   </div>
+  </div>
+  <div>
+     <Contact />
+  </div>
 </template>
 
 <script src="./DetailsService.ts"/>
