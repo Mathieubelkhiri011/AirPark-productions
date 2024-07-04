@@ -22,7 +22,7 @@ const routes = [
   },
   {
     path: '/:catchAll(.*)',
-    redirect: '/home',
+    components: { default: Home, navbar: Navbar },
   },
 ];
 
