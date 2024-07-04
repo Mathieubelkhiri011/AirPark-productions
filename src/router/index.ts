@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home/Home.vue';
 import Contact from '@/views/Contact/Contact.vue';
 import Navbar from '@/views/Navbar/Navbar.vue';
@@ -20,16 +20,15 @@ const routes = [
     name: 'service',
     components: { default: DetailsService, navbar: Navbar },
   },
-
   {
     path: '/:catchAll(.*)',
     redirect: '/home',
   },
-]
+];
 
 const router = createRouter({
-  history: createWebHistory('/AirPark-productions/'),
+  history: createWebHistory('/'),
   routes,
-})
+});
 
-export default router
+export default router;
