@@ -19,19 +19,19 @@
 
 
       <article class="service-inspection-content">
-        <v-img :src="qualite.image" cover class="image img-inspection" alt="Image" />
+        <v-img :src="custom.image" cover class="image img-inspection" alt="Image" />
         <div class="service-sub-content inspection">
-          <span class="service-title"> {{qualite.title}} </span>
-          <span class="service-description">{{ qualite.description }}</span>
+          <span class="service-title"> {{custom.title}} </span>
+          <span class="service-description">{{ custom.description }}</span>
         </div>
       </article>
 
 
       <article class="service-custom-content">
-        <v-img :src="integrite.image" cover class="image" alt="Image" />
+        <v-img :src="security.image" cover class="image" alt="Image" />
         <div class="service-sub-content">
-          <span class="service-title"> {{integrite.title}} </span>
-          <span class="service-description">{{ integrite.description }}</span>
+          <span class="service-title"> {{security.title}} </span>
+          <span class="service-description">{{ security.description }}</span>
         </div>
       </article>
 

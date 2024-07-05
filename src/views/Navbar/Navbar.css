@@ -8,7 +8,7 @@
 .navbar.transparent {
     background-color: transparent;
 
-    & .nav-items li span:hover {
+    & .nav-items li a:hover {
         background-color: hsla(0,0%,100%,.2);
         border-radius: .1875rem;
     }
@@ -17,6 +17,11 @@
 .navbar.transparent.open-menu,
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.75);
+
+    & .nav-items li a:hover {
+        background-color: hsla(0,0%,100%,.2);
+        border-radius: .1875rem;
+    }
 }
 
 a {
@@ -59,7 +64,7 @@ a {
         li {
             padding: 0 10px;
 
-            & span {
+            & a {
                 padding: 0.5rem;
             }
         }

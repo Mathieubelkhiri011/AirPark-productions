@@ -19,9 +19,10 @@
             <span>06.17.13.51.54</span>
           </a>
           <div class="social-network">
-            <i class="pi pi-instagram"></i>
-            <i class="pi pi-facebook"></i>
-            <i class="pi pi-pinterest"></i>
+            <a href="https://www.instagram.com/thomas.airpark"><i class="pi pi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61554337980241"><i class="pi pi-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCBaGAiSQTv8i9vyPQZb09WQ"><i class="pi pi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@thomas.airpark"><i class="pi pi-tiktok"></i></a>
           </div>
         </div>
       </div>

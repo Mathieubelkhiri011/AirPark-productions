@@ -25,3 +25,32 @@
     z-index: 10;
     transform: scaleY(-1);
 }
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    & .content-photo {
+        width: 100%;
+
+        & .photo {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    & .content-description {
+        text-align: center;
+
+        & span {
+            width: 75%;
+            display: inline-flex;
+        }
+    }
+}

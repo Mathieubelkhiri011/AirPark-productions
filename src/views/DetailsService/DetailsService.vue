@@ -5,11 +5,11 @@
   </div>
   <div class="container">
     <div class="details-service">
-      <h1 class="about-title title w-100"> {{ service.title }}</h1>
+      <h1 v-if="service.title" class="about-title title w-100"> {{ service.title }}</h1>
       <section class="presentation-container">
         <div class="presentation-content">
           <span class="presentation">
-            {{ service.description }}
+             <div v-html="service.description"></div>
           </span>
         </div>
       </section>
@@ -20,7 +20,7 @@
                 {{ detail.title }}
              </template>
              <template #content>
-                {{ detail.description }}
+                <div v-html="detail.description"></div>
              </template>
              <template #footer v-if="detail.button">
                <div class="flex gap-3 mt-1">
