@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home/Home.vue';
-import Contact from '@/views/Contact/Contact.vue';
+import ContactPage from '@/views/ContactPage/ContactPage.vue';
 import Navbar from '@/views/Navbar/Navbar.vue';
 import DetailsService from '@/views/DetailsService/DetailsService.vue';
 
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/contact',
     name: 'contact',
-    components: { default: Contact, navbar: Navbar },
+    components: { default: ContactPage, navbar: Navbar },
   },
   {
     path: '/service/:service',

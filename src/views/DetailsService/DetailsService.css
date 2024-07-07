@@ -1,13 +1,13 @@
 .responsive-image {
     width: 100%;
-    max-height: 100vh;
+    max-height: 80vh;
     object-fit: cover;
 }
 
 .image-container {
     position: relative;
     width: 100%;
-    max-height: 100vh;
+    max-height: 50vh;
     overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
 
 .small-image {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     height: auto;
     width: 100%;
     z-index: 0;
