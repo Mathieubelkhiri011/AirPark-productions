@@ -74,6 +74,15 @@ export default {
             text : `Une erreur est survenue lors de l'envoi du mail : ${response.statusText}`
           };
         } else {
+            mail.value= {
+              type: null,
+              firstname: null,
+              lastname: null,
+              from: null,
+              phone: null,
+              body: null
+            };
+
           snackbar.value = {
             show : true,
             icon : 'mdi-checkbox-marked-circle',
