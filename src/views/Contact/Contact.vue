@@ -19,7 +19,7 @@
             <a href="https://www.instagram.com/thomas.airpark" target="_blank"><i class="pi pi-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61554337980241" target="_blank"><i class="pi pi-facebook"></i></a>
             <a href="https://www.youtube.com/channel/UCBaGAiSQTv8i9vyPQZb09WQ" target="_blank"><i class="pi pi-youtube"></i></a>
-            <a href="https://www.tiktok.com/@thomas.airpark" target="_blank"><i class="pi pi-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@thomas.airpark" onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"><i class="pi pi-tiktok"></i></a>
           </div>
         </div>
       </div>

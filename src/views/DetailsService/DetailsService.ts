@@ -58,9 +58,9 @@ export default {
                 button : {
                     name: 'service',
                     params: {
-                       service: 'professionnel'
+                        service: 'professionnel'
                     }
-                 }
+                }
             }
         ]
       },
@@ -70,12 +70,14 @@ export default {
           description: '<div style="text-align: start;"> <p style="font-weight:bold;"> Des inspections précises et sécurisées pour votre tranquillité d\'esprit </p> </br> <p> Je propose des services d\'inspection par drone pour les particuliers, vous permettant de surveiller et d\'évaluer vos biens avec précision et en toute sécurité. Que vous ayez besoin d\'inspecter votre toiture, vos structures de grande hauteur ou d\'autres parties de votre propriété, nos drones fournissent des images et des données détaillées, réduisant ainsi les risques et les coûts associés aux inspections traditionnelles. </p> </br> <p> Mes services d\'inspection par drone pour particuliers incluent : </p> <ul style="margin-left: 2rem;"><li><span style="font-weight:bold;">Inspection de Toitures : </span> Vérifiez l\'état de votre toiture pour détecter les dommages, les fuites ou les signes d\'usure sans avoir à monter sur le toit.</li><li><span style="font-weight:bold;">Surveillance des Structures : </span> Inspectez les structures de grande hauteur telles que les cheminées, les antennes et les tours de manière sûre et efficace.</li><li><span style="font-weight:bold;">Inspection des Gouttières : </span>Assurez-vous que vos gouttières sont libres de débris et en bon état de fonctionnement pour éviter des problèmes d\'humidité.</li><li><span style="font-weight:bold;">Évaluation des Dommages : </span> Évaluez les dommages après une tempête ou un incident, en obtenant des images détaillées pour vos dossiers d\'assurance.</li><li><span style="font-weight:bold;">Suivi de Travaux : </span>Suivez l\'avancement de vos projets de rénovation ou de construction avec des prises de vue régulières et détaillées.</li></ul></br><p>J\'offre également des rapports détaillés et des analyses pour vous aider à prendre des décisions éclairées concernant l\'entretien et la réparation de votre propriété.</p></br><p>Contactez-moi dès aujourd\'hui pour discuter de vos besoins afin de vous aider à maintenir votre propriété en excellent état de manière sûre et efficace.</p> </div>',
           details: []
       },
+
       professionnel : {
           image: proWallpaper,
           title: null,
           description: '<div style="text-align: start;"> <p style="font-weight:bold;"> Des inspections précises et efficaces pour vos projets professionnels</p></br><p>Je vous propose des services d\'inspection par drone spécialement conçus pour répondre aux besoins des professionnels. Que vous soyez dans le secteur de la construction, de l\'énergie, des infrastructures ou de l\'immobilier, mes drones fournissent des données précises et des images détaillées qui facilitent la gestion et la maintenance de vos projets.</p></br><p>Ils sont équipés de capteurs de pointe, permettant de capturer des images et des vidéos nettes et détaillées. J\'opère avec une grande rigueur et respect des normes de sécurité, garantissant des inspections fiables et sans danger. </p></br><p>Mes drones peuvent accéder à des zones difficiles d\'accès, assurant une couverture complète et précise de vos installations et structures.</p></br><p>Nos services d\'inspection par drone pour professionnels incluent :</p><ul style="margin-left: 2rem;"><li><span style="font-weight:bold;">Inspection d\'Infrastructures : </span> Examinez l\'état de ponts, viaducs, pylônes et autres structures pour détecter les signes d\'usure, de corrosion ou de dommages.</li><li><span style="font-weight:bold;">Surveillance de Sites Industriels : </span> Suivez l\'état de vos installations industrielles, y compris les réservoirs, les cheminées et les équipements lourds, avec des inspections régulières.</li><li><span style="font-weight:bold;">Inspection de Toitures Commerciales : </span> Évaluez l\'état des toitures de bâtiments commerciaux pour identifier les dommages et planifier les réparations nécessaires.</li><li><span style="font-weight:bold;">Inspection de Parcs Éoliens et Solaires : </span> Surveillez la condition des éoliennes et des panneaux solaires pour optimiser leur performance et prolonger leur durée de vie.</li><li><span style="font-weight:bold;">Suivi de Chantiers : </span>Obtenez des vues aériennes régulières de vos chantiers de construction pour surveiller l\'avancement des travaux et assurer le respect des délais et des normes de sécurité.</li></ul></br><p>Prenez contact dès aujourd\'hui pour discuter de vos besoins et découvrir comment mes services peuvent vous aider à optimiser la gestion et la maintenance de vos infrastructures de manière sûre et efficace.</p></div>',
           details: []
       },
+
       cadrage : {
         image: priseVueWallpaper,
         title: 'Pourquoi choisir la prise de vue par drone ?',
