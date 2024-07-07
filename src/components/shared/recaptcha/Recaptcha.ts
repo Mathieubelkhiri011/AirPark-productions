@@ -22,12 +22,23 @@ export default {
     }
   },
   mounted() {
-    const intervalId = setInterval(() => {
-      if (window.grecaptcha) {
-        clearInterval(intervalId);
-        this.renderCaptcha();
-      }
-    }, 100);
+    let attempts = 0;
+      const maxAttempts = 50; // adjust according to your needs
+      const checkGrecaptcha = () => {
+        if (window.grecaptcha) {
+          clearInterval(this.intervalId);
+          this.renderCaptcha();
+        } else if (attempts >= maxAttempts) {
+          clearInterval(this.intervalId);
+          console.error('Failed to load reCAPTCHA after multiple attempts');
+        }
+        attempts++;
+      };
+
+      this.intervalId = setInterval(checkGrecaptcha, 100);
+  },
+  beforeDestroy() {
+    clearInterval(this.intervalId);
   },
   template: `<div class="g-recaptcha"></div>`,
 };
