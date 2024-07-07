@@ -32,3 +32,44 @@
 .captcha-button {
   margin-bottom: 1rem;
 }
+
+.captcha-button {
+  width: 100%;
+  max-width: 304px; /* Limite la largeur maximale si nécessaire */
+  position: relative; /* Nécessaire pour le positionnement absolu de l'iframe */
+}
+
+.captcha-button .grecaptcha-badge {
+  transform: scale(0.8); /* Ajustez la valeur de l'échelle selon votre besoin */
+  transform-origin: 0 0; /* Assurez-vous que l'origine de la transformation est en haut à gauche */
+}
+
+.captcha-button iframe {
+  transform: scale(0.9); /* Ajustez la valeur de l'échelle selon votre besoin */
+  transform-origin: 0 0; /* Assurez-vous que l'origine de la transformation est en haut à gauche */
+  position: absolute; /* Positionnement absolu pour éviter le débordement */
+  height: 100% !important; /* Force la hauteur de l'iframe */
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .captcha-button .grecaptcha-badge,
+  .captcha-button iframe {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .captcha-button .grecaptcha-badge,
+  .captcha-button iframe {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 330px) {
+  .captcha-button .grecaptcha-badge,
+  .captcha-button iframe {
+    transform: scale(0.6);
+  }
+}
