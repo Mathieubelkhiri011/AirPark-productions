@@ -10,7 +10,7 @@
             <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
             <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
           </div>
-          <a class="contact-email" href="mailto:airparkproductions@gmail.com">
+          <a class="contact-email" href="mailto:airpark.productions@gmail.com">
             <span>
               airparkproductions@gmail.com
             </span>
@@ -19,10 +19,10 @@
             <span>06.17.13.51.54</span>
           </a>
           <div class="social-network">
-            <a href="https://www.instagram.com/thomas.airpark"><i class="pi pi-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61554337980241"><i class="pi pi-facebook"></i></a>
-            <a href="https://www.youtube.com/channel/UCBaGAiSQTv8i9vyPQZb09WQ"><i class="pi pi-youtube"></i></a>
-            <a href="https://www.tiktok.com/@thomas.airpark"><i class="pi pi-tiktok"></i></a>
+            <a href="https://www.instagram.com/thomas.airpark" target="_blank"><i class="pi pi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61554337980241" target="_blank"><i class="pi pi-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCBaGAiSQTv8i9vyPQZb09WQ" target="_blank"><i class="pi pi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@thomas.airpark" target="_blank"><i class="pi pi-tiktok"></i></a>
           </div>
         </div>
       </div>
