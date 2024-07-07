@@ -174,6 +174,7 @@ export default {
     onBeforeMount(initializeService);
 
     watch(() => route.params.service, initializeService);
+
     onMounted(initializeService);
 
     return {

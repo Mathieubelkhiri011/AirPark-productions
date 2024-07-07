@@ -125,6 +125,7 @@ export default {
     };
 
     const onCaptchaVerified = (token: string) => {
+        console.debug("recaptcha : ", token);
       recaptchaToken.value = token;
     };
 
