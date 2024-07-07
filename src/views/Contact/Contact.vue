@@ -6,17 +6,14 @@
         <div class="info-content">
           <div>
             <h1>Discutons</h1>
-            <span>Vous souhaitez nous transmettre votre projet ?</span>
-            <span>Vous avez des questions, des commentaires ou des demandes particulières ?</span>
+            <span>Vous souhaitez nous transmettre votre projet?</span>
+            <span>Vous avez des questions, des commentaires ou des demandes particulières?</span>
             <span>N'hésitez pas à nous contacter, nous serons ravis de vous aider.</span>
           </div>
           <a class="contact-email" href="mailto:airpark.productions@gmail.com">
             <span>
               airparkproductions@gmail.com
             </span>
-          </a>
-          <a class="contact-phone" href="tel:+33617135154">
-            <span>06.17.13.51.54</span>
           </a>
           <div class="social-network">
             <a href="https://www.instagram.com/thomas.airpark" target="_blank"><i class="pi pi-instagram"></i></a>

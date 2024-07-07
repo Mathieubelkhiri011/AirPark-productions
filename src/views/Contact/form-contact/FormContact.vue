@@ -27,14 +27,9 @@
       label="Type de service *"
       v-model="mail.type"
       :items="[
-        'Evenementiel',
-        'Immmobilier',
-        'Reportages / Documentaires',
-        'Personnalisation',
-        'Promotion / Marketing',
-        'Particulier',
-        'Professionnel',
-        'Topographie / Cartographie',
+        'Prises de vue aérienne',
+        'Inspection de bâtiments',
+        'Cartographie et modélisation 3D',
         'Autre']"
       :rules="[required]"
       variant="outlined"
