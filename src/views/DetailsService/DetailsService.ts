@@ -42,6 +42,7 @@ export default {
       details: [
             {
                 title: "Pour les Particuliers",
+                image: individualWallpaper,
                 description: "<p> Inspection de Toitures et Structures Domestiques : Vérifiez l'état de vos toitures, façades, cheminées, et gouttières pour détecter les dommages, les fuites, et les signes d'usure, tout en évitant les risques associés aux inspections manuelles.</p>",
                 button :  {
                    name: 'service',
@@ -52,7 +53,8 @@ export default {
             },
             {
                 title: "Pour les Professionnels",
-                description: "<p> Surveillance d'Infrastructures et de Sites Industriels : Inspectez les toitures commerciales, les façades, les installations industrielles, et les structures de grande hauteur pour assurer leur intégrité, détecter les défauts structurels, et planifier les réparations nécessaires. </p> </br> <p> Je vous offrirai également des rapports détaillés et des analyses pour vous aider à prendre des décisions éclairées concernant l\'entretien et la réparation de vos bâtiments. N\'hésitez pas à prendre contact dès maintenant !</p>",
+                image: proWallpaper,
+                description: "<p> Surveillance d'Infrastructures et de Sites Industriels : Inspectez les toitures commerciales, les façades, les installations industrielles, et les structures de grande hauteur pour assurer leur intégrité, détecter les défauts structurels, et planifier les réparations nécessaires. </p>",
                 button : {
                     name: 'service',
                     params: {
@@ -81,6 +83,7 @@ export default {
         details: [
           {
               title: "Événementiel",
+              image: eventWallpaper,
               description: "<p> Captivez l’essence de vos événements sociaux, mariages, et cérémonies avec des vidéos aériennes spectaculaires.</p>",
               button :  {
                  name: 'service',
@@ -91,6 +94,7 @@ export default {
           },
           {
               title: "Immobilier",
+              image: immobilierWallpaper,
               description: "<p> Mettez en valeur vos propriétés résidentielles et commerciales en offrant des vues panoramiques et immersives.</p>",
               button :  {
                  name: 'service',
@@ -101,6 +105,7 @@ export default {
             },
           {
             title: "Marketing et Promotion",
+              image: marketingWallpaper,
             description: "<p> Créez des campagnes publicitaires percutantes et attirez des visiteurs avec des prises de vue aériennes de vos produits et destinations touristiques.</p>",
             button :  {
                name: 'service',
@@ -111,6 +116,7 @@ export default {
           },
           {
             title: "Reportages et Documentaires",
+              image: reportWallpaper,
             description: "<p> Capturez la beauté des paysages naturels et des sites historiques avec des vues aériennes grandioses.</p>",
             button :  {
                name: 'service',

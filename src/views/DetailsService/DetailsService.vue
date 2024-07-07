@@ -16,6 +16,9 @@
 
       <section class="infos-details">
          <Card class="infos-details-card" v-for="detail in service.details">
+            <template #header>
+              <img class="img-card-service" alt="service image" :src="detail.image" />
+            </template>
              <template #title>
                 {{ detail.title }}
              </template>
