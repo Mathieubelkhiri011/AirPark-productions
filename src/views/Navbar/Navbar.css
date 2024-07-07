@@ -8,7 +8,8 @@
 .navbar.transparent {
     background-color: transparent;
 
-    & .nav-items li a:hover {
+    & .nav-items li a:hover,
+      .nav-items li i:hover {
         background-color: hsla(0,0%,100%,.2);
         border-radius: .1875rem;
     }
@@ -18,7 +19,8 @@
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.75);
 
-    & .nav-items li a:hover {
+    & .nav-items li a:hover,
+     .nav-items li .pi.pi-angle-down:hover{
         background-color: hsla(0,0%,100%,.2);
         border-radius: .1875rem;
     }
@@ -61,11 +63,26 @@ a {
         margin: 0;
         padding: 0;
 
+        & .content-navbar-dropdown {
+
+            & .title-content-nav {
+                display: flex;
+                align-items: center;
+            }
+
+            display: flex;
+            justify-content: flex-end;
+        }
+
         li {
             padding: 0 10px;
 
             & a {
                 padding: 0.5rem;
+            }
+
+            & .pi.pi-angle-down {
+              padding-block: 0.5rem;
             }
         }
     }
@@ -115,13 +132,25 @@ a {
         }
     }
 
+    . content-nav-items {
+        justify-content: flex-start !important;
+        display: flex;
+    }
+
     .nav-items {
         flex-direction: column;
-        padding-left: 8rem !important;
+        align-items: start !important;
+        gap: 0.5rem;
+        padding-left: 25%;
         align-items: start !important;
 
-        & .nav-inspection {
-            padding-right: 5rem !important;
+        & .content-navbar-dropdown {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .topographie-nav {
+            padding-top: 0.5rem;
         }
 
         & span {
@@ -131,15 +160,15 @@ a {
         & .dropdown-menu {
             position: unset;
             border-radius: 0;
+            border: none !important;
             background-color: transparent;
-            list-style: disc;
             padding: 0;
-            display: block;
+            display: none;
             z-index: 10;
             margin-top: 0;
             margin-inline: 0;
-            margin-left: 2rem;
             text-align: left;
+            font-size: 12px;
 
             & li {
                 & a {
@@ -159,10 +188,6 @@ a {
            display: flex;
            flex-direction: column;
            justify-content: space-around;
-        }
-
-        & .dropdown-menu li {
-           padding: 5px 10px;
         }
     }
 
@@ -197,7 +222,7 @@ a {
   padding: 10px;
   display: none;
   z-index: 10;
-  margin-top: 0.40rem;
+  margin-top: 2.15rem;
 
   & li {
     & a {

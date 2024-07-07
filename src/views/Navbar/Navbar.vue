@@ -10,9 +10,13 @@
             <img :src="logo" alt="Logo AirPark" class="logo" />
           </router-link>
         </div>
+        <div class="content-nav-items">
         <ul class="nav-items">
-          <li @mouseover="showDropdownPriseVue = true" @mouseleave="showDropdownPriseVue = false">
-            <router-link :to="{ name: 'service', params: { service: 'cadrage' }}">Prise de vue</router-link>
+          <li class="content-navbar-dropdown" @mouseleave="showDropdownPriseVue = false">
+            <div class="title-content-nav">
+              <router-link :to="{ name: 'service', params: { service: 'cadrage' }}">Prise de vue</router-link>
+              <i class="pi pi-angle-down" @click="toggleDropdownPriseVue"></i>
+            </div>
             <ul v-if="showDropdownPriseVue" class="dropdown-menu">
               <li><router-link :to="{ name: 'service', params: { service: 'evenementiel' }}">Evenementiel</router-link></li>
               <li><router-link :to="{ name: 'service', params: { service: 'immobilier' }}">Immmobilier</router-link></li>
@@ -20,15 +24,19 @@
               <li><router-link :to="{ name: 'service', params: { service: 'marketing' }}">Promotion / Marketing</router-link></li>
             </ul>
           </li>
-          <li  class="nav-inspection" @mouseover="showDropdownInspection = true" @mouseleave="showDropdownInspection = false">
-            <router-link :to="{ name: 'service', params: { service: 'inspection' }}">Inspection de bâtiments</router-link>
+          <li  class="content-navbar-dropdown nav-inspection" @mouseleave="showDropdownInspection = false">
+            <div class="title-content-nav">
+              <router-link :to="{ name: 'service', params: { service: 'inspection' }}">Inspection de bâtiments</router-link>
+              <i class="pi pi-angle-down" @click="toggleDropdownInspection"></i>
+            </div>
             <ul v-if="showDropdownInspection" class="dropdown-menu">
               <li><router-link :to="{ name: 'service', params: { service: 'particulier' }}">Particulier</router-link></li>
               <li><router-link :to="{ name: 'service', params: { service: 'professionnel' }}">Professionnel</router-link></li>
             </ul>
           </li>
-          <li><router-link :to="{ name: 'service', params: { service: 'topographie' }}">Photogrammétrie</router-link></li>
+          <li class="topographie-nav"><router-link :to="{ name: 'service', params: { service: 'topographie' }}">Photogrammétrie</router-link></li>
         </ul>
+        </div>
         <div class="navbar-contact">
           <router-link class="link-button-contact" to="/contact">
             <span>Contactez-nous</span>

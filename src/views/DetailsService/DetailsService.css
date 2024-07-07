@@ -32,11 +32,13 @@
 
     & .infos-details {
         display: flex;
+        gap: 2rem;
         flex-wrap: wrap;
+        text-align: center;
         justify-content: center;
 
         & .p-card.p-component.infos-details-card {
-           max-width: 30%;
+           width: 13rem;
            margin: 1%;
            padding: 1%;
 

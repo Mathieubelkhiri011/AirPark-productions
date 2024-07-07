@@ -1,6 +1,6 @@
 import { computed, onBeforeUnmount, onMounted, type Ref, ref } from 'vue'
 
-import logo from '@/assets/images/logoAirPark.png';
+import logo from '@/assets/images/home/logoAirPark.png';
 
 export default {
 
@@ -11,11 +11,16 @@ export default {
 
     const showDropdownInspection: Ref<boolean> = ref(false);
 
-    const showDropdownPhotogrammetrie: Ref<boolean> = ref(false);
-
     const showMenu = () => {
       showMobileMenu.value = !showMobileMenu.value;
     };
+
+    const  toggleDropdownPriseVue = () => {
+      showDropdownPriseVue.value = !showDropdownPriseVue.value;
+    }
+    const  toggleDropdownInspection = () => {
+      showDropdownInspection.value = !showDropdownInspection.value;
+    }
 
     const isScrolled = ref(false);
 
@@ -44,9 +49,10 @@ export default {
       showMobileMenu,
       showDropdownPriseVue,
       showDropdownInspection,
-      showDropdownPhotogrammetrie,
       navbarClass,
-      showMenu
+      showMenu,
+      toggleDropdownPriseVue,
+      toggleDropdownInspection
     }
   }
 }

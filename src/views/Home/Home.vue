@@ -7,7 +7,7 @@
 
     <div class="presentation">
         <div class="content-photo">
-            <img :src="homeWallpaper" alt="Photo Thomas" class="photo">
+            <img :src="autorWallpaper" alt="Photo Boss of company" class="photo">
         </div>
         <div class="content-description">
             <span>
