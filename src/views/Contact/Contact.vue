@@ -12,7 +12,7 @@
           </div>
           <a class="contact-email" href="mailto:airpark.productions@gmail.com">
             <span>
-              airparkproductions@gmail.com
+              airpark.productions@gmail.com
             </span>
           </a>
           <div class="social-network">
