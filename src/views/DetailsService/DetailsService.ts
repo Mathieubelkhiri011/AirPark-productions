@@ -58,7 +58,7 @@ export default {
                 button : {
                     name: 'service',
                     params: {
-                       service: 'professionnels'
+                       service: 'professionnel'
                     }
                  }
             }
