@@ -40,8 +40,6 @@
         & .p-card.p-component.infos-details-card {
            width: 21rem;
            margin: 1%;
-           display: flex;
-           flex-direction: column;
 
            & .img-card-service {
                border-style: none;
@@ -58,7 +56,6 @@
               gap: 2rem;
               justify-content: space-between;
               padding: 1rem;
-              flex: 1;
            }
 
            & .link-button-contact {
