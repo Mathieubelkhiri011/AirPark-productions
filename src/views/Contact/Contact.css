@@ -68,3 +68,13 @@
       }
   }
 }
+
+.footer {
+    display: flex;
+    justify-content: right;
+
+    & span {
+        color: white;
+        font-size: .75em;
+    }
+}

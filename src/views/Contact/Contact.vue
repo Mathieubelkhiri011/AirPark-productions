@@ -29,6 +29,10 @@
       <FormContact></FormContact>
     </div>
   </div>
+
+  <div class="container footer">
+  <span> https://www.jesuisnumerique.fr </span>
+  </div>
   </div>
 </template>
 
