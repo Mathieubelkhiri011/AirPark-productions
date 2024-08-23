@@ -68,6 +68,10 @@ a {
             & .title-content-nav {
                 display: flex;
                 align-items: center;
+
+                & a {
+                    width: max-content;
+                }
             }
 
             display: flex;
@@ -102,6 +106,19 @@ a {
 }
 
 @media screen and (max-width: 950px) {
+
+    .header-navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .name {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            position: absolute;
+        }
+    }
+
     .nav-menu {
         padding-top: 10px;
         width: 100%;
@@ -114,6 +131,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-top: 3em;
     }
 
     .nav-menu .closed-menu {
@@ -194,6 +212,7 @@ a {
     .button-pi-bars {
         display: block;
         text-align: left;
+        z-index: 1;
 
         & .pi-bars {
             z-index: 2;
@@ -247,3 +266,12 @@ a {
 .dropdown-menu li {
   padding: 5px 10px;
 }
+
+.disable-logo-header {
+  display: none;
+}
+
+.show-logo-header {
+  display: block;
+}
+

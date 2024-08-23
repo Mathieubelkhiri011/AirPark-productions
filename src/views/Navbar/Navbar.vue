@@ -1,11 +1,18 @@
 <template>
   <div :class="navbarClass">
     <div class="container nav-menu">
-      <div class="button-pi-bars">
-        <i class="pi pi-bars" :class="this.showMobileMenu ? 'pi-bars-open-menu' : 'pi-bars-closed-menu'" @click="showMenu()"></i>
+      <div class="header-navbar">
+        <div class="button-pi-bars">
+          <i class="pi pi-bars" :class="this.showMobileMenu ? 'pi-bars-open-menu' : 'pi-bars-closed-menu'" @click="showMenu()"></i>
+        </div>
+        <div class="name" :class="this.showMobileMenu ? 'show-logo-header' : 'disable-logo-header'">
+          <router-link to="/home">
+            <img :src="logo" alt="Logo AirPark" class="logo" />
+          </router-link>
+        </div>
       </div>
       <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
-        <div class="name">
+        <div class="name" :class="this.showMobileMenu ? 'disable-logo-header' : 'show-logo-header'">
           <router-link to="/home">
             <img :src="logo" alt="Logo AirPark" class="logo" />
           </router-link>
